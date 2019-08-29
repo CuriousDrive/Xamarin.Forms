@@ -1,0 +1,24 @@
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\bin\Release\netstandard2.0\OAuthNativeFlow.deps.json
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\bin\Release\netstandard2.0\OAuthNativeFlow.dll
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\bin\Release\netstandard2.0\OAuthNativeFlow.pdb
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlowPage.xaml.g.cs
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.csproj.CoreCompileInputs.cache
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.AssemblyInfoInputs.cache
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.AssemblyInfo.cs
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\XamlC.stamp
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.dll
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.pdb
+C:\Data\CuriousDrive\Hello World Projects\Xamarin_Forms___OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\bin\Release\netstandard2.0\OAuthNativeFlow.deps.json
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\bin\Release\netstandard2.0\OAuthNativeFlow.dll
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\bin\Release\netstandard2.0\OAuthNativeFlow.pdb
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlowPage.xaml.g.cs
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.csproj.CoreCompileInputs.cache
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.AssemblyInfoInputs.cache
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.AssemblyInfo.cs
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\XamlC.stamp
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.dll
+C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Release\netstandard2.0\OAuthNativeFlow.pdb

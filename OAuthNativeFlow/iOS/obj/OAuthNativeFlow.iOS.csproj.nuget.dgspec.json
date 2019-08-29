@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\iOS\\OAuthNativeFlow.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\iOS\\OAuthNativeFlow.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\iOS\\OAuthNativeFlow.iOS.csproj",
+        "projectName": "OAuthNativeFlow.iOS",
+        "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\iOS\\OAuthNativeFlow.iOS.csproj",
+        "packagesPath": "C:\\Users\\fahad.mullaji\\.nuget\\packages\\",
+        "outputPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fahad.mullaji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\OAuthNativeFlow\\OAuthNativeFlow.csproj": {
+                "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\OAuthNativeFlow\\OAuthNativeFlow.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.6.0.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.1.0.555618, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\OAuthNativeFlow\\OAuthNativeFlow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\OAuthNativeFlow\\OAuthNativeFlow.csproj",
+        "projectName": "OAuthNativeFlow",
+        "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\OAuthNativeFlow\\OAuthNativeFlow.csproj",
+        "packagesPath": "C:\\Users\\fahad.mullaji\\.nuget\\packages\\",
+        "outputPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\OAuthNativeFlow\\OAuthNativeFlow\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fahad.mullaji\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.1.0.673156, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
