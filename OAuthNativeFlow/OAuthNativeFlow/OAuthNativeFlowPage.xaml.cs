@@ -27,8 +27,9 @@ namespace OAuthNativeFlow
         {
             string clientId = null;
 			string redirectUri = null;
+            //Xamarin.Auth.CustomTabsConfiguration.CustomTabsClosingMessage = null;            
 
-			switch (Device.RuntimePlatform)
+            switch (Device.RuntimePlatform)
 			{
 				case Device.iOS:
 					clientId = Constants.GoogleiOSClientId;
@@ -116,12 +117,29 @@ namespace OAuthNativeFlow
                 {
                     var httpClient = new HttpClient();
                     
-                    var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=email&access_token=" + e.Account.Properties["access_token"]);
+                    var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=email,name,profile_pic&access_token=" + e.Account.Properties["access_token"]);
 
-                    FacebookEmail facebookEmail = JsonConvert.DeserializeObject<FacebookEmail>(json);
+                    user = JsonConvert.DeserializeObject<User>(json);
 
                     await store.SaveAsync(account = e.Account, Constants.AppName);
-                    await DisplayAlert("Email address", facebookEmail.Email, "OK");
+
+                    Application.Current.Properties.Remove("Id");
+                    Application.Current.Properties.Remove("FirstName");
+                    Application.Current.Properties.Remove("LastName");
+                    Application.Current.Properties.Remove("DisplayName");
+                    Application.Current.Properties.Remove("EmailAddress");
+                    Application.Current.Properties.Remove("ProfilePicture");
+
+                    Application.Current.Properties.Add("Id", user.Id);
+                    Application.Current.Properties.Add("FirstName", user.GivenName);
+                    Application.Current.Properties.Add("LastName", user.FamilyName);
+                    Application.Current.Properties.Add("DisplayName", user.FamilyName);
+                    Application.Current.Properties.Add("EmailAddress", user.Email);
+                    Application.Current.Properties.Add("ProfilePicture", user.Picture);
+
+                    await Navigation.PushAsync(new ProfilePage());
+
+                    await DisplayAlert("Email address", user.Email, "OK");
                 }
                 else
                 {
@@ -143,7 +161,22 @@ namespace OAuthNativeFlow
                     }
 
                     await store.SaveAsync(account = e.Account, Constants.AppName);
-                    await DisplayAlert("Email address", user.Email, "OK");
+
+                    Application.Current.Properties.Remove("Id");
+                    Application.Current.Properties.Remove("FirstName");
+                    Application.Current.Properties.Remove("LastName");
+                    Application.Current.Properties.Remove("DisplayName");
+                    Application.Current.Properties.Remove("EmailAddress");
+                    Application.Current.Properties.Remove("ProfilePicture");
+
+                    Application.Current.Properties.Add("Id", user.Id);
+                    Application.Current.Properties.Add("FirstName", user.GivenName);
+                    Application.Current.Properties.Add("LastName", user.FamilyName);
+                    Application.Current.Properties.Add("DisplayName", user.FamilyName);
+                    Application.Current.Properties.Add("EmailAddress", user.Email);
+                    Application.Current.Properties.Add("ProfilePicture", user.Picture);
+
+                    await Navigation.PushAsync(new ProfilePage());
                 } 
 			}
 		}

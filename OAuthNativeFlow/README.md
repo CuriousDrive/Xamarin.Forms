@@ -18,4 +18,4 @@ For more information about this sample see [Authenticating Users with an Identit
 
 ## Author
 
-David Britch
+Curious Drive

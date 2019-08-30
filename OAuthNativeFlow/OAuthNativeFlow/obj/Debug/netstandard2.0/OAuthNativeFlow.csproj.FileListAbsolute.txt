@@ -34,3 +34,16 @@ C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\n
 C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.dll
 C:\Data\CuriousDrive\PrivateProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.pdb
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\bin\Debug\netstandard2.0\OAuthNativeFlow.deps.json
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\bin\Debug\netstandard2.0\OAuthNativeFlow.dll
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\bin\Debug\netstandard2.0\OAuthNativeFlow.pdb
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlowPage.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.csproj.CoreCompileInputs.cache
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.AssemblyInfoInputs.cache
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.AssemblyInfo.cs
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.dll
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.pdb
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs

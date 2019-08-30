@@ -95,5 +95,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\FacebookLogo.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ProfilePicture.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

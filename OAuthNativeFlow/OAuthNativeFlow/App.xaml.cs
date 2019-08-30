@@ -10,7 +10,7 @@ namespace OAuthNativeFlow
         {
             InitializeComponent();
 
-            MainPage = new OAuthNativeFlowPage();
+            MainPage = new NavigationPage(new OAuthNativeFlowPage());
         }
 
         protected override void OnStart()

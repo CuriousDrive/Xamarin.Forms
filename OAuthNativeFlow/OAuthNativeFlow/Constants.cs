@@ -10,7 +10,7 @@
 		public static string GoogleAndroidClientId = "784590901798-10q2tqjo9136bo4g0p1ge7j3lvp3qka3.apps.googleusercontent.com";
 
 		// These values do not need changing
-		public static string GoogleScope = "https://www.googleapis.com/auth/userinfo.email";
+		public static string GoogleScope = "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile";
 		public static string GoogleAuthorizeUrl = "https://accounts.google.com/o/oauth2/auth";
 		public static string GoogleAccessTokenUrl = "https://www.googleapis.com/oauth2/v4/token";
 		public static string GoogleUserInfoUrl = "https://www.googleapis.com/oauth2/v2/userinfo";
@@ -24,7 +24,7 @@
         // Facebook OAuth
         // For Facebook login, configure at https://developers.facebook.com
         public static string FacebookiOSClientId = "<insert IOS client ID here>";
-        public static string FacebookAndroidClientId = "318295725262502";
+        public static string FacebookAndroidClientId = "2766458866702044";
 
         // These values do not need changing
         public static string FacebookScope = "email";

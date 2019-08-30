@@ -5736,10 +5736,13 @@ namespace OAuthNativeFlow.Droid
 			public const int notify_panel_notification_icon_bg = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int tooltip_frame_dark = 2131165298;
+			public const int ProfilePicture = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int tooltip_frame_light = 2131165299;
+			public const int tooltip_frame_dark = 2131165299;
+			
+			// aapt resource value: 0x7F070074
+			public const int tooltip_frame_light = 2131165300;
 			
 			static Drawable()
 			{
