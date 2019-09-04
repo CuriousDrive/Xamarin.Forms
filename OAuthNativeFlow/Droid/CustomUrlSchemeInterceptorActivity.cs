@@ -10,7 +10,7 @@ namespace OAuthNativeFlow.Droid
 	[IntentFilter(
 		new[] { Intent.ActionView },
 		Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
-		DataSchemes = new[] { "com.googleusercontent.apps.784590901798-10q2tqjo9136bo4g0p1ge7j3lvp3qka3" },
+		DataSchemes = new[] { "com.googleusercontent.apps.673213691698-5fgguoupq8r9q894nruunrh497tkt9im" },
 		DataPath = "/oauth2redirect")]
 	public class CustomUrlSchemeInterceptorActivity : Activity
 	{

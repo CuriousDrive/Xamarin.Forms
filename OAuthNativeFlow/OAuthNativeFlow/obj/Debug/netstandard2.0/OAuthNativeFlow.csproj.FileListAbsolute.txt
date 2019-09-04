@@ -45,5 +45,5 @@ C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\ne
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.dll
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.pdb
-C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.csprojAssemblyReference.cache
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\ProfilePage.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\OAuthNativeFlow\obj\Debug\netstandard2.0\OAuthNativeFlow.csprojAssemblyReference.cache

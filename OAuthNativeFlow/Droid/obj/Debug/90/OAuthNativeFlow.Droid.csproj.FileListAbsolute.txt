@@ -1870,5 +1870,5 @@ C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\obj\Debug\90\stamp\_Co
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\bin\Debug\OAuthNativeFlow.dll.mdb
 C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\obj\Debug\90\res\drawable\profilepicture.png
+C:\Data\CuriousDrive\PublicProjects\OAuthNativeFlow\Droid\bin\Debug\OAuthNativeFlow.dll.mdb
