@@ -110,16 +110,18 @@ namespace OAuthNativeFlow
 				authenticator.Error -= OnAuthError;
 			}
 
-            User user = null;
+            
 			if (e.IsAuthenticated)
 			{
                 if (authenticator.AuthorizeUrl.Host == "www.facebook.com")
                 {
+                    FacebookEmail facebookEmail = null;
+
                     var httpClient = new HttpClient();
                     
-                    var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=email,name,profile_pic&access_token=" + e.Account.Properties["access_token"]);
+                    var json = await httpClient.GetStringAsync($"https://graph.facebook.com/me?fields=id,name,first_name,last_name,email,picture.type(large)&access_token=" + e.Account.Properties["access_token"]);
 
-                    user = JsonConvert.DeserializeObject<User>(json);
+                    facebookEmail = JsonConvert.DeserializeObject<FacebookEmail>(json);
 
                     await store.SaveAsync(account = e.Account, Constants.AppName);
 
@@ -130,19 +132,19 @@ namespace OAuthNativeFlow
                     Application.Current.Properties.Remove("EmailAddress");
                     Application.Current.Properties.Remove("ProfilePicture");
 
-                    Application.Current.Properties.Add("Id", user.Id);
-                    Application.Current.Properties.Add("FirstName", user.GivenName);
-                    Application.Current.Properties.Add("LastName", user.FamilyName);
-                    Application.Current.Properties.Add("DisplayName", user.FamilyName);
-                    Application.Current.Properties.Add("EmailAddress", user.Email);
-                    Application.Current.Properties.Add("ProfilePicture", user.Picture);
+                    Application.Current.Properties.Add("Id", facebookEmail.Id);
+                    Application.Current.Properties.Add("FirstName", facebookEmail.First_Name);
+                    Application.Current.Properties.Add("LastName", facebookEmail.Last_Name);
+                    Application.Current.Properties.Add("DisplayName", facebookEmail.Name);
+                    Application.Current.Properties.Add("EmailAddress", facebookEmail.Email);
+                    Application.Current.Properties.Add("ProfilePicture", facebookEmail.Picture.Data.Url);
 
-                    await Navigation.PushAsync(new ProfilePage());
-
-                    await DisplayAlert("Email address", user.Email, "OK");
+                    await Navigation.PushAsync(new ProfilePage());                   
                 }
                 else
                 {
+                    User user = null;
+
                     // If the user is authenticated, request their basic user data from Google
                     // UserInfoUrl = https://www.googleapis.com/oauth2/v2/userinfo
                     var request = new OAuth2Request("GET", new Uri(Constants.GoogleUserInfoUrl), null, e.Account);

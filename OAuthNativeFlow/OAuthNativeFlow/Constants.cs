@@ -27,7 +27,7 @@
         public static string FacebookAndroidClientId = "2766458866702044";
 
         // These values do not need changing
-        public static string FacebookScope = "email";
+        public static string FacebookScope = "public_profile";
         public static string FacebookAuthorizeUrl = "https://www.facebook.com/dialog/oauth/";
         public static string FacebookAccessTokenUrl = "https://www.facebook.com/connect/login_success.html";
         public static string FacebookUserInfoUrl = "https://graph.facebook.com/me?fields=email&access_token={accessToken}";
