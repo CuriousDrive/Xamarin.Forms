@@ -24,10 +24,10 @@
         // Facebook OAuth
         // For Facebook login, configure at https://developers.facebook.com
         public static string FacebookiOSClientId = "<insert IOS client ID here>";
-        public static string FacebookAndroidClientId = "2766458866702044";
+        public static string FacebookAndroidClientId = "377296112967592";
 
         // These values do not need changing
-        public static string FacebookScope = "public_profile";
+        public static string FacebookScope = "email";
         public static string FacebookAuthorizeUrl = "https://www.facebook.com/dialog/oauth/";
         public static string FacebookAccessTokenUrl = "https://www.facebook.com/connect/login_success.html";
         public static string FacebookUserInfoUrl = "https://graph.facebook.com/me?fields=email&access_token={accessToken}";

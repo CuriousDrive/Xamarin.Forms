@@ -1,0 +1,14 @@
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\bin\Debug\netstandard2.0\UserInterfaceApp.deps.json
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\bin\Debug\netstandard2.0\UserInterfaceApp.dll
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\bin\Debug\netstandard2.0\UserInterfaceApp.pdb
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\Labels.xaml.g.cs
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.csproj.CoreCompileInputs.cache
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.AssemblyInfoInputs.cache
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.AssemblyInfo.cs
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.dll
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.pdb
+C:\Data\CuriousDrive\PrivateProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\Entries.xaml.g.cs
