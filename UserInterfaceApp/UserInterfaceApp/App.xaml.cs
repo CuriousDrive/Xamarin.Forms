@@ -11,12 +11,7 @@ namespace UserInterfaceApp
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new Entries();
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
+            MainPage = new Buttons();
         }
 
         protected override void OnSleep()

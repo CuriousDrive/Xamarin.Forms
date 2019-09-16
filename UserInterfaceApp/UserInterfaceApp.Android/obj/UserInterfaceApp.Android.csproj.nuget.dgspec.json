@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj": {}
+    "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj": {
+    "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj",
+        "projectUniqueName": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj",
         "projectName": "UserInterfaceApp.Android",
-        "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj",
+        "projectPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\UserInterfaceApp.Android.csproj",
         "packagesPath": "C:\\Users\\fahad.mullaji\\.nuget\\packages\\",
-        "outputPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\obj\\",
+        "outputPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj": {
-                "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj"
+              "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj": {
+                "projectPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj": {
+    "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj",
+        "projectUniqueName": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj",
         "projectName": "UserInterfaceApp",
-        "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj",
+        "projectPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj",
         "packagesPath": "C:\\Users\\fahad.mullaji\\.nuget\\packages\\",
-        "outputPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\obj\\",
+        "outputPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
