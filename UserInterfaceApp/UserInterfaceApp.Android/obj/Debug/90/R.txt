@@ -1195,6 +1195,7 @@ int drawable notification_tile_bg 0x7f070137
 int drawable notify_panel_notification_icon_bg 0x7f070138
 int drawable tooltip_frame_dark 0x7f070139
 int drawable tooltip_frame_light 0x7f07013a
+int drawable win_logo 0x7f07013b
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002

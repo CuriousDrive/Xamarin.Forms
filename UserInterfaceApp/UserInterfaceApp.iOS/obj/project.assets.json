@@ -1012,11 +1012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.iOS\\UserInterfaceApp.iOS.csproj",
+      "projectUniqueName": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.iOS\\UserInterfaceApp.iOS.csproj",
       "projectName": "UserInterfaceApp.iOS",
-      "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.iOS\\UserInterfaceApp.iOS.csproj",
+      "projectPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.iOS\\UserInterfaceApp.iOS.csproj",
       "packagesPath": "C:\\Users\\fahad.mullaji\\.nuget\\packages\\",
-      "outputPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp.iOS\\obj\\",
+      "outputPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1037,8 +1037,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj": {
-              "projectPath": "C:\\Data\\CuriousDrive\\PrivateProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj"
+            "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj": {
+              "projectPath": "C:\\Data\\CuriousDrive\\PublicProjects\\UserInterfaceApp\\UserInterfaceApp\\UserInterfaceApp.csproj"
             }
           }
         }

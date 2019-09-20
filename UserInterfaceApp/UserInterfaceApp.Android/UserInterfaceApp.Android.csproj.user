@@ -4,5 +4,6 @@
     <SelectedDevice>nexus_xl_-_android_pie</SelectedDevice>
     <DefaultDevice>nexus_xl_-_android_pie</DefaultDevice>
     <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>
