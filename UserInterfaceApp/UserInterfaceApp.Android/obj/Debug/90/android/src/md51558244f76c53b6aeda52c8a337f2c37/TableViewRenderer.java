@@ -10,6 +10,7 @@ public class TableViewRenderer
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_onAttachedToWindow:()V:GetOnAttachedToWindowHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.TableViewRenderer, Xamarin.Forms.Platform.Android", TableViewRenderer.class, __md_methods);
 	}
@@ -37,6 +38,14 @@ public class TableViewRenderer
 		if (getClass () == TableViewRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.TableViewRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
 	}
+
+
+	public void onAttachedToWindow ()
+	{
+		n_onAttachedToWindow ();
+	}
+
+	private native void n_onAttachedToWindow ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

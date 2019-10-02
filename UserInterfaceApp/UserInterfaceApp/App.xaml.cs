@@ -11,7 +11,7 @@ namespace UserInterfaceApp
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new Images();
+            MainPage = new AppMasterDetailPage();
         }
 
         protected override void OnSleep()

@@ -820,7 +820,6 @@ C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\ob
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EditorRenderer.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EditorRendererBase_1.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EmptyViewAdapter.java
-C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EmptyViewAdapter_EmptyViewHolder.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EndSingleSnapHelper.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EndSnapHelper.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\EntryAccessibilityDelegate.java
@@ -889,7 +888,6 @@ C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\ob
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableItemsViewRenderer.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SelectableViewHolder.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellContentFragment.java
-C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellFlyoutContentRenderer.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellFlyoutRecyclerAdapter.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellFlyoutRecyclerAdapter_ElementViewHolder.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ShellFlyoutRecyclerAdapter_LinearLayoutWithFocus.java
@@ -1001,3 +999,8 @@ C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\ob
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\typemap.mj.armeabi-v7a.s
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\typemap.mj.x86.s
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\typemap.mj.x86_64.s
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\GridLayoutSpanSizeLookup.java
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ScrollHelper.java
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SimpleViewHolder.java
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md5423e3a95c357eb7d6aad61b4f54abbd4\RecyclerViewScrollListener.java
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\bin\Debug\UserInterfaceApp.dll.mdb

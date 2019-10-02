@@ -48,7 +48,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.1.0.555618, )"
+              "version": "[4.2.0.815419, )"
             }
           }
         }
@@ -116,7 +116,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.1.0.555618, )"
+              "version": "[4.2.0.815419, )"
             }
           },
           "imports": [
@@ -129,7 +129,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

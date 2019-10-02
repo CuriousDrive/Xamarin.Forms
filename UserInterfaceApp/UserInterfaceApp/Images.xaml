@@ -16,7 +16,7 @@
                 <Image Source="https://cdn.cultofmac.com/wp-content/uploads/2019/07/logo-780x390.jpg" WidthRequest="600" HeightRequest="200"></Image>
                 <Label Text="Apple Logo" FontSize="Large"></Label>
 
-                <Image Source="{local:ImageResource XamarinApp.xamarin_logo.png}" WidthRequest="600" HeightRequest="200"></Image>
+                <Image Source="{local:ImageResource UserInterfaceApp.xamarin_logo.png}" WidthRequest="600" HeightRequest="200"></Image>
                 <Label Text="Xamarin Logo" FontSize="Large"></Label>
 
             </StackLayout>

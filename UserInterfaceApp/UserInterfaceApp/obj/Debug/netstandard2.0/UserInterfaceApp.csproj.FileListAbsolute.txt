@@ -26,3 +26,9 @@ C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.dll
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.pdb
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\Images.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\Checkboxes.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\AppMasterDetailPage.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\AppMasterDetailPageMaster.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\EnrollStudentPage.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\EmployeeListPage.xaml.g.cs

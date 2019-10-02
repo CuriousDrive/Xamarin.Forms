@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:UserInterfaceApp"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.EmployeeListPage">
+    
+    <ContentPage.BindingContext>
+        <local:EmployeeListViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry Placeholder="Employee Name" Text="{Binding EmployeeName}"></Entry>
+            <Button Text="Add" Command="{Binding AddEmployeeCommand}"></Button>
+            <Button Text="Remove" Command="{Binding RemoveEmployeeCommand}"></Button>
+            <Button Text="Update" Command="{Binding UpdateEmployeeCommand}"></Button>
+
+            <ListView x:Name="lvEmployees" ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}">
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

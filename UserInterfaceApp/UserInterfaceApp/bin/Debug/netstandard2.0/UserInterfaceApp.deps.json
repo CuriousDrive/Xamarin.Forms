@@ -11,7 +11,7 @@
         "dependencies": {
           "NETStandard.Library": "2.0.3",
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "4.1.0.555618"
+          "Xamarin.Forms": "4.2.0.815419"
         },
         "runtime": {
           "UserInterfaceApp.dll": {}
@@ -42,19 +42,19 @@
           }
         }
       },
-      "Xamarin.Forms/4.1.0.555618": {
+      "Xamarin.Forms/4.2.0.815419": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.267"
+            "fileVersion": "4.2.0.115"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.267"
+            "fileVersion": "4.2.0.115"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.1.0.267"
+            "fileVersion": "4.2.0.115"
           }
         }
       }
@@ -94,12 +94,12 @@
       "path": "xamarin.essentials/1.1.0",
       "hashPath": "xamarin.essentials.1.1.0.nupkg.sha512"
     },
-    "Xamarin.Forms/4.1.0.555618": {
+    "Xamarin.Forms/4.2.0.815419": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eZHy/yCrKhu3WUI1oszz8Hvq8iC+wQyokEVkzlSmNJD6xa2pGLq5UjOgpXEWu7zKPaoZ5c70SrTv1BBZE+Je1A==",
-      "path": "xamarin.forms/4.1.0.555618",
-      "hashPath": "xamarin.forms.4.1.0.555618.nupkg.sha512"
+      "sha512": "sha512-GrKE8TBjR5chew92HBcoaTuqwo6Jnpp0djVaN4/wtGQW/URZAt3Eb3zF8rQ6jRA2WKuTKm3wyPTCPrB2PekIfQ==",
+      "path": "xamarin.forms/4.2.0.815419",
+      "hashPath": "xamarin.forms.4.2.0.815419.nupkg.sha512"
     }
   }
 }

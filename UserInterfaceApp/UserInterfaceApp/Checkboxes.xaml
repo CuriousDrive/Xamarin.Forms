@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.Checkboxes">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Are you a Xamarin fan?" FontSize="Large" Grid.Row="0" Grid.Column="0"></Label>
+                <CheckBox x:Name="cbXamarinFan" CheckedChanged="CbXamarinFan_CheckedChanged" Grid.Row="0" Grid.Column="1"></CheckBox>
+            </Grid>
+
+            <Label x:Name="lblCheckBox" FontSize="Large"></Label>
+
+            <CheckBox x:Name="checkBox" />
+            <Label Text="Lorem ipsum dolor sit amet, elit rutrum, enim hendrerit augue vitae praesent sed non, lorem aenean quis praesent pede.">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label"
+                     Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}"
+                     Value="true">
+                        <Setter Property="FontAttributes"
+                    Value="Italic, Bold" />
+                        <Setter Property="FontSize"
+                    Value="Large" />
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

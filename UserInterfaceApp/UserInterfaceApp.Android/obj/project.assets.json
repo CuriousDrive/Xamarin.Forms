@@ -812,14 +812,14 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.1.0.555618": {
+      "Xamarin.Forms/4.2.0.815419": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Android.Support.CustomTabs": "28.0.0.1",
-          "Xamarin.Android.Support.Design": "28.0.0.1",
-          "Xamarin.Android.Support.v4": "28.0.0.1",
-          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.1",
-          "Xamarin.Android.Support.v7.CardView": "28.0.0.1"
+          "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
+          "Xamarin.Android.Support.Design": "28.0.0.3",
+          "Xamarin.Android.Support.v4": "28.0.0.3",
+          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.3",
+          "Xamarin.Android.Support.v7.CardView": "28.0.0.3"
         },
         "compile": {
           "lib/MonoAndroid90/FormsViewGroup.dll": {},
@@ -845,7 +845,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xamarin.Essentials": "1.1.0",
-          "Xamarin.Forms": "4.1.0.555618"
+          "Xamarin.Forms": "4.2.0.815419"
         },
         "compile": {
           "bin/placeholder/UserInterfaceApp.dll": {}
@@ -1733,10 +1733,10 @@
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.1.0.555618": {
-      "sha512": "eZHy/yCrKhu3WUI1oszz8Hvq8iC+wQyokEVkzlSmNJD6xa2pGLq5UjOgpXEWu7zKPaoZ5c70SrTv1BBZE+Je1A==",
+    "Xamarin.Forms/4.2.0.815419": {
+      "sha512": "GrKE8TBjR5chew92HBcoaTuqwo6Jnpp0djVaN4/wtGQW/URZAt3Eb3zF8rQ6jRA2WKuTKm3wyPTCPrB2PekIfQ==",
       "type": "package",
-      "path": "xamarin.forms/4.1.0.555618",
+      "path": "xamarin.forms/4.2.0.815419",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1956,13 +1956,13 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
@@ -1975,7 +1975,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.1.0.555618.nupkg.sha512",
+        "xamarin.forms.4.2.0.815419.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1996,7 +1996,7 @@
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
       "Xamarin.Essentials >= 1.1.0",
-      "Xamarin.Forms >= 4.1.0.555618"
+      "Xamarin.Forms >= 4.2.0.815419"
     ]
   },
   "packageFolders": {
@@ -2075,10 +2075,62 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.1.0.555618, )"
+            "version": "[4.2.0.815419, )"
           }
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Android.Support.v4 from 28.0.0.3 to 28.0.0.1. Reference the package directly from the project to select a different version. \r\n UserInterfaceApp.Android -> Xamarin.Forms 4.2.0.815419 -> Xamarin.Android.Support.v4 (>= 28.0.0.3) \r\n UserInterfaceApp.Android -> Xamarin.Android.Support.v4 (>= 28.0.0.1)",
+      "libraryId": "Xamarin.Android.Support.v4",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Android.Support.Design from 28.0.0.3 to 28.0.0.1. Reference the package directly from the project to select a different version. \r\n UserInterfaceApp.Android -> Xamarin.Forms 4.2.0.815419 -> Xamarin.Android.Support.Design (>= 28.0.0.3) \r\n UserInterfaceApp.Android -> Xamarin.Android.Support.Design (>= 28.0.0.1)",
+      "libraryId": "Xamarin.Android.Support.Design",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Android.Support.v7.AppCompat from 28.0.0.3 to 28.0.0.1. Reference the package directly from the project to select a different version. \r\n UserInterfaceApp.Android -> Xamarin.Forms 4.2.0.815419 -> Xamarin.Android.Support.v7.AppCompat (>= 28.0.0.3) \r\n UserInterfaceApp.Android -> Xamarin.Android.Support.v7.AppCompat (>= 28.0.0.1)",
+      "libraryId": "Xamarin.Android.Support.v7.AppCompat",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Android.Support.v7.CardView from 28.0.0.3 to 28.0.0.1. Reference the package directly from the project to select a different version. \r\n UserInterfaceApp.Android -> Xamarin.Forms 4.2.0.815419 -> Xamarin.Android.Support.v7.CardView (>= 28.0.0.3) \r\n UserInterfaceApp.Android -> Xamarin.Android.Support.v7.CardView (>= 28.0.0.1)",
+      "libraryId": "Xamarin.Android.Support.v7.CardView",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Android.Support.CustomTabs from 28.0.0.3 to 28.0.0.1. Reference the package directly from the project to select a different version. \r\n UserInterfaceApp.Android -> Xamarin.Forms 4.2.0.815419 -> Xamarin.Android.Support.CustomTabs (>= 28.0.0.3) \r\n UserInterfaceApp.Android -> Xamarin.Android.Support.CustomTabs (>= 28.0.0.1)",
+      "libraryId": "Xamarin.Android.Support.CustomTabs",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    }
+  ]
 }
