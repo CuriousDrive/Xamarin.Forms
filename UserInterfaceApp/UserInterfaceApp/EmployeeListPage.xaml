@@ -11,16 +11,45 @@
         <local:EmployeeListViewModel/>
     </ContentPage.BindingContext>
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout>
 
-            <Entry Placeholder="Employee Name" Text="{Binding EmployeeName}"></Entry>
+            <!--<Entry Placeholder="Employee Name" Text="{Binding EmployeeName}"></Entry>
             <Button Text="Add" Command="{Binding AddEmployeeCommand}"></Button>
             <Button Text="Remove" Command="{Binding RemoveEmployeeCommand}"></Button>
-            <Button Text="Update" Command="{Binding UpdateEmployeeCommand}"></Button>
+            <Button Text="Update" Command="{Binding UpdateEmployeeCommand}"></Button>-->
 
-            <ListView x:Name="lvEmployees" ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}">
+            <ListView ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="7*"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <Image Source="{Binding PictureUrl}" Grid.Column="0"></Image>
+                                
+                                <Label Text="{Binding EmployeeName}" 
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Grid.Column="1" 
+                                       VerticalTextAlignment="Start"></Label>
+                                
+                                <Label Text="{Binding Designation}" Grid.Column="1" VerticalTextAlignment="End"></Label>
 
+                                <Image Source="edit.png" Grid.Column="2"></Image>
+                                <Image Source="trash.png" Grid.Column="3"></Image>
+                            </Grid>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
 
         </StackLayout>
