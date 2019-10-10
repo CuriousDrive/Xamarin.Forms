@@ -45,3 +45,5 @@ C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.dll
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.pdb
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.csproj.CopyComplete
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Authors.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\Authors.razor.g.cs
