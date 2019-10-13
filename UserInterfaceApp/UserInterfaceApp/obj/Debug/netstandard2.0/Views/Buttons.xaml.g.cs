@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Buttons.xaml", "Buttons.xaml", typeof(global::UserInterfaceApp.Buttons))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Views.Buttons.xaml", "Views/Buttons.xaml", typeof(global::UserInterfaceApp.Buttons))]
 
 namespace UserInterfaceApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Buttons.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Buttons.xaml")]
     public partial class Buttons : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

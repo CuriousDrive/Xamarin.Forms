@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -27,6 +28,30 @@ namespace UserInterfaceApp
             Employees.Add(new Employee(4, "Keith Joyce-Purdy", "Project Manager", "img4.jpg"));
             Employees.Add(new Employee(5, "Sheri Spruce", "Sr. Software Engineer", "img5.jpg"));
             Employees.Add(new Employee(6, "Burt Indybrick", "Software Engineer", "img6.jpg"));
+
+            MessagingCenter.Subscribe<AddOrEditEmployeePage, Employee>(this, "AddOrEditEmployee", 
+                (page, employee) => 
+                {
+                    if(employee.EmployeeId == 0)
+                    {
+                        employee.EmployeeId = Employees.Count + 1;
+                        Employees.Add(employee);
+                    }
+                    else 
+                    {
+                        Employee employeeToEdit = Employees.Where(emp => emp.EmployeeId == employee.EmployeeId).FirstOrDefault();
+
+                        int newIndex = Employees.IndexOf(employeeToEdit);
+                        Employees.Remove(employeeToEdit);
+
+                        Employees.Add(employee);
+                        int oldIndex = Employees.IndexOf(employee);
+
+                        Employees.Move(oldIndex, newIndex);
+                    }
+                    
+                }
+                );
 
 
             //Employees.Add("Rob Finnerty");

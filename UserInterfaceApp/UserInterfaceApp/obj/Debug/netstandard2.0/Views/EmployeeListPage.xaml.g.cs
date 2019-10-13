@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Labels.xaml", "Labels.xaml", typeof(global::UserInterfaceApp.Labels))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Views.EmployeeListPage.xaml", "Views/EmployeeListPage.xaml", typeof(global::UserInterfaceApp.EmployeeListPage))]
 
 namespace UserInterfaceApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Labels.xaml")]
-    public partial class Labels : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\EmployeeListPage.xaml")]
+    public partial class EmployeeListPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Labels));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(EmployeeListPage));
         }
     }
 }

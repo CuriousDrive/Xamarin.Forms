@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Images.xaml", "Images.xaml", typeof(global::UserInterfaceApp.Images))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Views.AddOrEditEmployeePage.xaml", "Views/AddOrEditEmployeePage.xaml", typeof(global::UserInterfaceApp.AddOrEditEmployeePage))]
 
 namespace UserInterfaceApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Images.xaml")]
-    public partial class Images : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AddOrEditEmployeePage.xaml")]
+    public partial class AddOrEditEmployeePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Images));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AddOrEditEmployeePage));
         }
     }
 }

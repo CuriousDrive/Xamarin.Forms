@@ -12,7 +12,7 @@
     </ContentPage.BindingContext>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add"></ToolbarItem>
+        <ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked"></ToolbarItem>
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
@@ -43,8 +43,20 @@
                                 
                                 <Label Text="{Binding Designation}" Grid.Column="1" VerticalTextAlignment="End"></Label>
 
-                                <Image Source="edit.png" Grid.Column="2"></Image>
-                                <Image Source="trash.png" Grid.Column="3"></Image>
+                                <Image Source="edit.png" Grid.Column="2">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Tapped="TapGestureRecognizer_Tapped_Edit"
+                                            CommandParameter="{Binding EmployeeId}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <Image Source="trash.png" Grid.Column="3">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Tapped="TapGestureRecognizer_Tapped_Remove"
+                                            CommandParameter="{Binding EmployeeId}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
                             </Grid>
                             
                         </ViewCell>

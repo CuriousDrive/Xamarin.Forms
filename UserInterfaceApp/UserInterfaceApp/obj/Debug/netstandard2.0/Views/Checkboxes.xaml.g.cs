@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Checkboxes.xaml", "Checkboxes.xaml", typeof(global::UserInterfaceApp.Checkboxes))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Views.Checkboxes.xaml", "Views/Checkboxes.xaml", typeof(global::UserInterfaceApp.Checkboxes))]
 
 namespace UserInterfaceApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Checkboxes.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Checkboxes.xaml")]
     public partial class Checkboxes : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

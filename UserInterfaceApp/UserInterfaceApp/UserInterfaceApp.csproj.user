@@ -3,9 +3,4 @@
   <PropertyGroup>
     <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Update="AppMasterDetailPageMasterMenuItem.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
 </Project>

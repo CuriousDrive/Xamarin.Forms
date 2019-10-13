@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Entries.xaml", "Entries.xaml", typeof(global::UserInterfaceApp.Entries))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Views.Entries.xaml", "Views/Entries.xaml", typeof(global::UserInterfaceApp.Entries))]
 
 namespace UserInterfaceApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Entries.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Entries.xaml")]
     public partial class Entries : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

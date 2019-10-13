@@ -1003,7 +1003,6 @@ C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\ob
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\ScrollHelper.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md51558244f76c53b6aeda52c8a337f2c37\SimpleViewHolder.java
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\android\src\md5423e3a95c357eb7d6aad61b4f54abbd4\RecyclerViewScrollListener.java
-C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\bin\Debug\UserInterfaceApp.dll.mdb
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\res\drawable\edit.png
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\res\drawable\img1.jpg
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp.Android\obj\Debug\90\res\drawable\img2.jpg

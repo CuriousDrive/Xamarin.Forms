@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.AppMasterDetailPageMaster.xaml", "AppMasterDetailPageMaster.xaml", typeof(global::UserInterfaceApp.AppMasterDetailPageMaster))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("UserInterfaceApp.Views.AppMasterDetailPageMaster.xaml", "Views/AppMasterDetailPageMaster.xaml", typeof(global::UserInterfaceApp.AppMasterDetailPageMaster))]
 
 namespace UserInterfaceApp {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("AppMasterDetailPageMaster.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AppMasterDetailPageMaster.xaml")]
     public partial class AppMasterDetailPageMaster : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
