@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\OAuthNativeFlow",
     "\\UserInterfaceApp"
   ],
-  "SelectedNode": "\\UserInterfaceApp\\UserInterfaceApp.sln",
+  "SelectedNode": "\\OAuthNativeFlow\\OAuthNativeFlow.sln",
   "PreviewInSolutionExplorer": false
 }

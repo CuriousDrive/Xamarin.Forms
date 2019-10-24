@@ -9,12 +9,13 @@ C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\bin\Debug\netcoreapp3.0\
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\bin\Debug\netcoreapp3.0\BlazorApp.pdb
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\bin\Debug\netcoreapp3.0\BlazorApp.Views.dll
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\bin\Debug\netcoreapp3.0\BlazorApp.Views.pdb
-C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.csprojAssemblyReference.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\staticwebassets\BlazorApp.StaticWebAssets.Manifest.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\staticwebassets\BlazorApp.StaticWebAssets.xml
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.RazorComponent.input.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\App.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\AuthorDetail.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Authors.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Counter.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Error.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\FetchData.razor.g.cs
@@ -27,6 +28,8 @@ C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.TagHelpers.output.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.RazorCoreGenerate.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\App.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\AuthorDetail.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\Authors.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\Counter.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\Error.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\FetchData.razor.g.cs
@@ -45,5 +48,3 @@ C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.dll
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.pdb
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.csproj.CopyComplete
-C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Authors.razor.g.cs
-C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\Authors.razor.g.cs

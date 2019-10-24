@@ -18,10 +18,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <!--<Entry Placeholder="Employee Name" Text="{Binding EmployeeName}"></Entry>
-            <Button Text="Add" Command="{Binding AddEmployeeCommand}"></Button>
-            <Button Text="Remove" Command="{Binding RemoveEmployeeCommand}"></Button>
-            <Button Text="Update" Command="{Binding UpdateEmployeeCommand}"></Button>-->
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
 
             <ListView ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}">
                 <ListView.ItemTemplate>

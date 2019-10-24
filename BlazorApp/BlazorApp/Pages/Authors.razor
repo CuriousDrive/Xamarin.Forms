@@ -1,7 +1,38 @@
 ﻿@page "/authors"
+@inject IAuthorService authorService;
+@using BlazorApp.Data;
 
 <h3>Authors</h3>
+<hr />
+
+<div class="col-12">
+
+    @foreach (Author author in AuthorList)
+    {
+        <div class="col-12 row">
+            <div class="col-2">
+                <NavLink href=@string.Format("/authors/authordetail/{0}",@author.AuthorId)>
+                    @author.AuthorId
+                </NavLink>
+            </div>
+            <div class="col-2">@author.FirstName @author.LastName</div>
+        </div>
+    }
+
+</div>
+
+<hr />
+<div class="col-12 row">@authorService.GetCreatedDate()</div>
+<div class="col-12 row">version : @authorService.GetVersion()</div>
 
 @code {
 
+    public List<Author> AuthorList { get; set; }
+    //public AuthorService authorService { get; set; }
+
+    protected override void OnInitialized()
+    {
+        //authorService = new AuthorService();
+        AuthorList = authorService.GetAuthors();
+    }
 }
