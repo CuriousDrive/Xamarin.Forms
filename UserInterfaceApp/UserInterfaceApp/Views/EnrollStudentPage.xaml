@@ -15,7 +15,11 @@
         <StackLayout>
 
             <Label Text="Name :" FontSize="Large"></Label>
-            <Entry x:Name="entFullName" Text="{Binding FullName}" FontSize="Large"></Entry>
+            <Entry x:Name="entFullName" Text="{Binding FullName}" FontSize="Large">
+                <Entry.Behaviors>
+                    <local:OnlyLettersValidationBehavior/>
+                </Entry.Behaviors>
+            </Entry>
 
             <Label Text="Email Address :" FontSize="Large"></Label>
             <Entry x:Name="entEmailAddress" Text="{Binding EmailAddress}" FontSize="Large"></Entry>

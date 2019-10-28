@@ -39,6 +39,7 @@ namespace UserInterfaceApp
                     new AppMasterDetailPageMasterMenuItem { Id = 3, Title = "Images", TargetType = typeof(Images) },
                     new AppMasterDetailPageMasterMenuItem { Id = 4, Title = "Enrollment", TargetType = typeof(EnrollStudentPage) },
                     new AppMasterDetailPageMasterMenuItem { Id = 5, Title = "Employee List", TargetType = typeof(EmployeeListPage) },
+                    new AppMasterDetailPageMasterMenuItem { Id = 5, Title = "Behaviors", TargetType = typeof(BehaviorsPage) },
 
                 });
             }

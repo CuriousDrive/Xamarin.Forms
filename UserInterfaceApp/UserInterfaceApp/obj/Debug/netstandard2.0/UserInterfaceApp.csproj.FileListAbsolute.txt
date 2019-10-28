@@ -32,3 +32,6 @@ C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.dll
 C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.pdb
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\UserInterfaceApp.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\Views\EmployeeDetailPage.xaml.g.cs
+C:\Data\CuriousDrive\PublicProjects\UserInterfaceApp\UserInterfaceApp\obj\Debug\netstandard2.0\Views\BehaviorsPage.xaml.g.cs

@@ -18,9 +18,18 @@
     <ContentPage.Content>
         <StackLayout>
 
+            <SearchBar x:Name="schEmployees">
+                <SearchBar.Behaviors>
+                    <local:EventToCommandBehavior EventName="TextChanged"
+                                                  Command="{Binding searchCommand}"
+                                                  CommandParameter="{Binding Text, Source={x:Reference schEmployees}}"/>
+                </SearchBar.Behaviors>
+            </SearchBar>
+            
             <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
 
-            <ListView ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}">
+            <ListView ItemsSource="{Binding Employees}" 
+                      ItemSelected="ListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -55,12 +64,10 @@
                                     </Image.GestureRecognizers>
                                 </Image>
                             </Grid>
-                            
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

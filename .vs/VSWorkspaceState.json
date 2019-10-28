@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\OAuthNativeFlow",
+    "\\OAuthNativeFlow\\OAuthNativeFlow",
     "\\UserInterfaceApp"
   ],
-  "SelectedNode": "\\OAuthNativeFlow\\OAuthNativeFlow.sln",
+  "SelectedNode": "\\OAuthNativeFlow\\OAuthNativeFlow\\OAuthNativeFlowPage.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

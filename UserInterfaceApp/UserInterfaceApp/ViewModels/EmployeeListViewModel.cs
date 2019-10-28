@@ -13,43 +13,34 @@ namespace UserInterfaceApp
 {
     class EmployeeListViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<Employee> _employees;
-        public ObservableCollection<Employee> Employees 
+        EmployeeService employeeService;
+        public ICommand searchCommand => new Command<string>(LoadEmployees);
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ObservableCollection<Employee> _employees;
+        public ObservableCollection<Employee> Employees
         {
             get { return _employees; }
             set { _employees = value; OnPropertyChanged(); }
         }
         public string EmployeeName { get; set; }
         public string SelectedEmployee { get; set; }
-
         private bool _isBusy;
-        public bool IsBusy 
-        { 
+        public bool IsBusy
+        {
             get { return _isBusy; }
             set { _isBusy = value; OnPropertyChanged(); }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-
-
         public EmployeeListViewModel()
         {
-            LoadEmployees();
-
-            //Employees = new ObservableCollection<Employee>();
-
-            //Employees.Add(new Employee(1, "Rob Finnerty", "CEO", "img1.jpg"));
-            //Employees.Add(new Employee(2, "Bill Wrestler", "Director", "img2.jpg"));
-            //Employees.Add(new Employee(3, "Geri-Beth Hooper", "Delivery Manager", "img3.jpg"));
-            //Employees.Add(new Employee(4, "Keith Joyce-Purdy", "Project Manager", "img4.jpg"));
-            //Employees.Add(new Employee(5, "Sheri Spruce", "Sr. Software Engineer", "img5.jpg"));
-            //Employees.Add(new Employee(6, "Burt Indybrick", "Software Engineer", "img6.jpg"));
+            employeeService = new EmployeeService();
+            LoadEmployees(string.Empty);
 
             MessagingCenter.Subscribe<AddOrEditEmployeePage, Employee>(this, "AddOrEditEmployee",
                 (page, employee) =>
@@ -63,27 +54,25 @@ namespace UserInterfaceApp
                     {
                         Employee employeeToEdit = Employees.Where(emp => emp.EmployeeId == employee.EmployeeId).FirstOrDefault();
 
-                        int newIndex = Employees.IndexOf(employeeToEdit);
+                        int newIdex = Employees.IndexOf(employeeToEdit);
                         Employees.Remove(employeeToEdit);
 
                         Employees.Add(employee);
                         int oldIndex = Employees.IndexOf(employee);
 
-                        Employees.Move(oldIndex, newIndex);
+                        Employees.Move(oldIndex, newIdex);
                     }
                 }
                 );
         }
-
-        public void LoadEmployees() 
+        public void LoadEmployees(string query)
         {
             IsBusy = true;
             Task.Run(async () =>
             {
-                Employees = await new EmployeeService().GetEmployees();
+                Employees = await employeeService.GetEmployeesAsync(query);
                 IsBusy = false;
             });
         }
-
     }
 }

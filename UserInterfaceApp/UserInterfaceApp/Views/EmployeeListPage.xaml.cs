@@ -21,7 +21,6 @@ namespace UserInterfaceApp
         {
             Navigation.PushAsync(new AddOrEditEmployeePage());
         }
-
         
         private void TapGestureRecognizer_Tapped_Edit(object sender, EventArgs e)
         {
@@ -38,5 +37,11 @@ namespace UserInterfaceApp
 
             ((EmployeeListViewModel)BindingContext).Employees.Remove(employee);
         }
+
+        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Navigation.PushAsync(new EmployeeDetailPage((Employee)e.SelectedItem));
+        }
+
     }
 }
