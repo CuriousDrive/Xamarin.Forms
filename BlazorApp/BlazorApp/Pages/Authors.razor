@@ -1,24 +1,90 @@
-﻿@page "/authors"
+﻿@page "/"
 @inject IAuthorService authorService;
 @using BlazorApp.Data;
 
-<h3>Authors</h3>
-<hr />
-
 <div class="col-12">
+    <h3><b>Enter Author Information</b></h3>
+    <hr />
 
-    @foreach (Author author in AuthorList)
-    {
+    <EditForm Model="@author" OnValidSubmit="@SaveAuthor">
+        <DataAnnotationsValidator />
+        
         <div class="col-12 row">
-            <div class="col-2">
-                <NavLink href=@string.Format("/authors/authordetail/{0}",@author.AuthorId)>
-                    @author.AuthorId
-                </NavLink>
-            </div>
-            <div class="col-2">@author.FirstName @author.LastName</div>
+            <label class="col-2 font-weight-bold">first name :</label>
+            <InputText class="form-control col-3" @bind-Value="author.FirstName" placeholder="first name" />
+            &nbsp;<ValidationMessage For="@(() => author.FirstName)"/>
         </div>
-    }
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">last name :</label>
+            <InputText class="form-control col-3" @bind-Value="author.LastName" placeholder="last name" />
+            &nbsp;<ValidationMessage For="@(() => author.LastName)" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">city :</label>
+            <InputText class="form-control col-3" @bind-Value="author.City" placeholder="city" />
+            &nbsp;<ValidationMessage For="@(() => author.City)" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">email address :</label>
+            <InputText class="form-control col-3" @bind-Value="author.EmailAddress" placeholder="email address" />
+            &nbsp;<ValidationMessage For="@(() => author.EmailAddress)" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <label class="col-2 font-weight-bold">salary :</label>
+            <InputNumber class="form-control col-3" @bind-Value="author.Salary" />
+            &nbsp;<ValidationMessage For="@(() => author.Salary)" />
+        </div>
+        <br />
+        <div class="col-12 row">
+            <span class="col-2"></span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Save" />
+            <span>&nbsp;</span>
+            <input type="submit" class="form-control col-1 btn btn-primary" value="Clear" />
+        </div>
 
+    </EditForm>
+
+</div>
+
+<br />
+
+<div class="col-10">
+
+    <h3><b>Authors</b></h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>AuthorId</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>Email Address</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var author in authorList)
+            {
+                <tr>
+                    <td>
+                        <NavLink href=@string.Format("/authors/authordetail/{0}",@author.AuthorId)>
+                            @author.AuthorId
+                        </NavLink>
+                    </td>
+                    <td>@author.FirstName</td>
+                    <td>@author.LastName</td>
+                    <td>@author.City</td>
+                    <td>@author.EmailAddress</td>
+                    <td>$@author.Salary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 
 <hr />
@@ -27,12 +93,18 @@
 
 @code {
 
-    public List<Author> AuthorList { get; set; }
-    //public AuthorService authorService { get; set; }
+    public Author author { get; set; }
+    public List<Author> authorList { get; set; }
 
     protected override void OnInitialized()
     {
-        //authorService = new AuthorService();
-        AuthorList = authorService.GetAuthors();
+        author = new Author();
+        authorList = authorService.GetAuthors();
+    }
+
+    private void SaveAuthor()
+    {
+        authorService.SaveAuthor(author);
+        author = new Author();
     }
 }
