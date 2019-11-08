@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 namespace BlazorApp.Data
 {
     public class AuthorService : IAuthorService
-    {
-        public DateTime CreationDate { get; set; }
+    {   
         public List<Author> Authors { get; set; }
 
         public AuthorService()
         {
-            CreationDate = DateTime.Now;
-
             Authors = new List<Author>();
 
             Authors.Add(new Author("172-32-1176", "Johnson", "White", "johnson.white@gmail.com", 11000, "4084967223", "Menlo Park"));
@@ -33,10 +30,11 @@ namespace BlazorApp.Data
             return Authors.Where(auth => auth.AuthorId == authorId).FirstOrDefault();
         }
 
-        public void SaveAuthor(Author author)
+        public bool SaveAuthor(Author author)
         {
             author.AuthorId = GetNewAuthor();
             Authors.Add(author);
+            return true;
         }
 
         private string GetNewAuthor()
@@ -50,14 +48,9 @@ namespace BlazorApp.Data
             return id;
         }
 
-        public DateTime GetCreatedDate()
+        public void DeleteAuthor(string authorId)
         {
-            return CreationDate;
-        }
-
-        public string GetVersion()
-        {
-            return "v1";
+            throw new NotImplementedException();
         }
     }
 }

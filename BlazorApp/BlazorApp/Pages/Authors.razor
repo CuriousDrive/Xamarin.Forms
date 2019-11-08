@@ -6,9 +6,9 @@
 <div class="col-12">
     <h3><b>Enter Author Information</b></h3>
     <hr />
-    <div id="divServerValidations" class="col-10 alert alert-info">
-
-    </div>
+    <ServerValidations IsVisible="IsVisible" Results="Results">
+        <span>Author : </span>@RecordName
+    </ServerValidations>
     <EditForm Model="@author" OnValidSubmit="@SaveAuthor">
         @*<DataAnnotationsValidator />*@
         
@@ -100,9 +100,6 @@
     </table>
 </div>
 
-<hr />
-<div class="col-12 row">@authorService.GetCreatedDate()</div>
-<div class="col-12 row">version : @authorService.GetVersion()</div>
 
 @code {
 
@@ -111,6 +108,9 @@
     public string[] Cities { get; set; }
     ElementReference firstNameText;
 
+    public bool IsVisible { get; set; }
+    public string RecordName { get; set; }
+    public bool Results { get; set; }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -130,12 +130,15 @@
 
     private async Task SaveAuthor()
     {
-        authorService.SaveAuthor(author);
+        Results = false;//authorService.SaveAuthor(author);
+        IsVisible = true;
+
         var firstName = author.FirstName;
         var lastName = author.LastName;
+        RecordName = firstName + " " + lastName;
         author = new Author();
 
-        await JSRuntime.InvokeVoidAsync("saveMessage",firstName,lastName);
+        //await JSRuntime.InvokeVoidAsync("saveMessage",firstName,lastName);
         await JSRuntime.InvokeVoidAsync("setFocusOnElement", firstNameText);
     }
 }
