@@ -24,9 +24,9 @@
     public Author AuthorDetails { get; set; }
     //public AuthorService authorService { get; set; }
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         //authorService = new AuthorService();
-        AuthorDetails = authorService.GetAuthorById(AuthorId);
+        AuthorDetails = await authorService.GetAuthorById(AuthorId);
     }
 }

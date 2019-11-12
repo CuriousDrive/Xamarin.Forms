@@ -50,6 +50,7 @@ C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.csproj.CopyComplete
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Publishers.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Pages\Publishers.razor.g.cs
-C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\BlazorApp.csprojAssemblyReference.cache
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\ServerValidations.razor.g.cs
 C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Shared\ServerValidations.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\RazorDeclaration\Shared\SelectCity.razor.g.cs
+C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\obj\Debug\netcoreapp3.0\Razor\Shared\SelectCity.razor.g.cs

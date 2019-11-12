@@ -1,7 +1,6 @@
-﻿
-@if (IsVisible)
+﻿@if (IsVisible)
 {
-    @if (Results)
+    @if (Result)
     {
         <div id="divValidationMessage" class="col-10 alert alert-danger row">
             <div class="col-11" style="text-align:left">
@@ -24,23 +23,27 @@
             </div>
         </div>
     }
-
 }
 
 @code {
-
     [Parameter]
     public bool IsVisible { get; set; }
 
     [Parameter]
-    public RenderFragment ChildContent { get; set; }
+    public bool Result { get; set; }
 
     [Parameter]
-    public bool Results { get; set; }
+    public RenderFragment ChildContent { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Result = false; ///authorService.CheckConnection();
+        IsVisible = true;
+        await base.OnParametersSetAsync();
+    }
 
     private void CloseValidation()
     {
         IsVisible = false;
     }
-
 }

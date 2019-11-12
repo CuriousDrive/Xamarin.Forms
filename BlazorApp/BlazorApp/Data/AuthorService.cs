@@ -13,28 +13,28 @@ namespace BlazorApp.Data
         {
             Authors = new List<Author>();
 
-            Authors.Add(new Author("172-32-1176", "Johnson", "White", "johnson.white@gmail.com", 11000, "4084967223", "Menlo Park"));
-            Authors.Add(new Author("213-46-8915", "Marjorie", "Green", "marjorie.green@gmail.com", 22000, "4159867020", "Oakland"));
-            Authors.Add(new Author("238-95-7766", "Cheryl", "Carson", "cheryl.carson@gmail.com", 39000, "4155487723", "Berkeley"));
-            Authors.Add(new Author("267-41-2394", "Michael", "O'Leary", "michael.oleary@gmail.com", 31000, "4082862428", "San Jose"));
-            Authors.Add(new Author("274-80-9391", "Dean", "Straight", "dean.straight@gmail.com", 29000, "4158342919", "Oakland"));
+            Authors.Add(new Author("172-32-1176", "Johnson", "White","johnson.white@gmail.com",11000,"4084967223", "Menlo Park"));
+            Authors.Add(new Author("213-46-8915", "Marjorie","Green","marjorie.green@gmail.com", 22000, "4159867020", "Oakland"));
+            Authors.Add(new Author("238-95-7766", "Cheryl", "Carson","cheryl.carson@gmail.com",39000, "4155487723", "Berkeley"));
+            Authors.Add(new Author("267-41-2394", "Michael", "O'Leary","michael.oleary@gmail.com",31000, "4082862428", "San Jose"));
+            Authors.Add(new Author("274-80-9391", "Dean", "Straight","dean.straight@gmail.com",29000, "4158342919", "Oakland"));
         }
 
-        public List<Author> GetAuthors()
+        public async Task<List<Author>> GetAuthors()
         {
-            return Authors;
+            return await Task.FromResult(Authors);
         }
 
-        public Author GetAuthorById(string authorId)
+        public async Task<Author> GetAuthorById(string authorId)
         {
-            return Authors.Where(auth => auth.AuthorId == authorId).FirstOrDefault();
+            return await Task.FromResult(Authors.Where(auth => auth.AuthorId == authorId).FirstOrDefault());
         }
-
-        public bool SaveAuthor(Author author)
+        
+        public async Task<bool> SaveAuthor(Author author)
         {
             author.AuthorId = GetNewAuthor();
             Authors.Add(author);
-            return true;
+            return await Task.FromResult(true);
         }
 
         private string GetNewAuthor()
@@ -48,9 +48,9 @@ namespace BlazorApp.Data
             return id;
         }
 
-        public void DeleteAuthor(string authorId)
+        public async Task<bool> DeleteAuthor(string authorId)
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(true);
         }
     }
 }

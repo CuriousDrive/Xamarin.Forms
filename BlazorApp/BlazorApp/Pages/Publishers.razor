@@ -6,7 +6,7 @@
 <div class="col-12">
     <h3><b>Enter Publisher Information</b></h3>
     <hr />
-    <ServerValidations IsVisible="IsVisible" Results="Results">
+    <ServerValidations IsVisible="IsVisible" Result="Result">
         <span>Publisher : </span>@RecordName
     </ServerValidations>
 
@@ -79,7 +79,7 @@
 
     public bool IsVisible { get; set; }
     public string RecordName { get; set; }
-    public bool Results { get; set; }
+    public bool Result { get; set; }
     
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -100,7 +100,7 @@
 
     private async Task SavePublisher()
     {
-        Results = publisherService.SavePublisher(publisher);
+        Result = false;//publisherService.SavePublisher(publisher);
         IsVisible = true;
         RecordName = publisher.Publisher_Name;
 

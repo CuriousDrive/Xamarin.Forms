@@ -1,21 +1,25 @@
-﻿@page "/"
+﻿@page "/authors"
 @inject IAuthorService authorService;
 @inject IJSRuntime JSRuntime;
+@implements IDisposable;
 @using BlazorApp.Data;
+
 
 <div class="col-12">
     <h3><b>Enter Author Information</b></h3>
     <hr />
-    <ServerValidations IsVisible="IsVisible" Results="Results">
-        <span>Author : </span>@RecordName
+    
+    <ServerValidations IsVisible="IsVisible" Result="Result">
+        @RecordName
     </ServerValidations>
+
     <EditForm Model="@author" OnValidSubmit="@SaveAuthor">
         @*<DataAnnotationsValidator />*@
-        
+
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">first name :</label>
-            <input @ref="firstNameText" class="form-control col-3" @bind="author.FirstName" placeholder="first name" />
-            &nbsp;<ValidationMessage For="@(() => author.FirstName)"/>
+            <input @ref="firstNameTextBox" class="form-control col-3" @bind="author.FirstName" placeholder="first name" />
+            &nbsp;<ValidationMessage For="@(() => author.FirstName)" />
         </div>
         <br />
         <div class="col-12 row">
@@ -26,18 +30,20 @@
         <br />
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">city :</label>
-            <InputSelect @bind-Value="author.City" class="form-control col-3">
+            @*<select @bind="author.City" class="form-control col-3">
                 @if (@Cities != null)
                 {
+                    <option value="">select city..</option>
                     @foreach (var city in Cities)
                     {
                         <option value="@city">@city</option>
                     }
                 }
-            </InputSelect>
+            </select>*@
+            <SelectCity></SelectCity>
 
-            @*<InputText class="form-control col-3" @bind-Value="author.City" placeholder="city" />
-        &nbsp;<ValidationMessage For="@(() => author.City)" />*@
+            @*<InputText class="form-control col-3" @bind-Value="author.City" placeholder="city" />*@
+            &nbsp;<ValidationMessage For="@(() => author.City)" />
         </div>
         <br />
         <div class="col-12 row">
@@ -83,62 +89,116 @@
         <tbody>
             @foreach (var author in authorList)
             {
-                <tr>
-                    <td>
-                        <NavLink href=@string.Format("/authors/authordetail/{0}",@author.AuthorId)>
-                            @author.AuthorId
-                        </NavLink>
-                    </td>
-                    <td>@author.FirstName</td>
-                    <td>@author.LastName</td>
-                    <td>@author.City</td>
-                    <td>@author.EmailAddress</td>
-                    <td>$@author.Salary</td>
-                </tr>
+            <tr>
+                <td>
+                    <NavLink href=@string.Format("/authors/authordetail/{0}",@author.AuthorId)>
+                        @author.AuthorId
+                    </NavLink>
+                </td>
+                <td>@author.FirstName</td>
+                <td>@author.LastName</td>
+                <td>@author.City</td>
+                <td>@author.EmailAddress</td>
+                <td>$@author.Salary</td>
+            </tr>
             }
         </tbody>
     </table>
 </div>
 
-
 @code {
 
     public Author author { get; set; }
     public List<Author> authorList { get; set; }
-    public string[] Cities { get; set; }
-    ElementReference firstNameText;
+
 
     public bool IsVisible { get; set; }
+    public bool Result { get; set; }
     public string RecordName { get; set; }
-    public bool Results { get; set; }
+    public string[] Cities { get; set; }
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender && Cities == null)
-        {
-            Cities = await JSRuntime.InvokeAsync<string[]>("getCities");
-
-            StateHasChanged();
-        }
-    }
+    ElementReference firstNameTextBox;
 
     protected override void OnInitialized()
     {
+        Console.WriteLine("Authors - OnInitialized");
+        base.OnInitialized();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("Authors - OnInitializedAsync");
+
         author = new Author();
-        authorList = authorService.GetAuthors();
+        authorList = await authorService.GetAuthors();
+
+        await base.OnInitializedAsync();
+    }
+
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine("Authors - OnParametersSet");
+        base.OnParametersSet();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        Console.WriteLine("Authors - OnParametersSetAsync");
+        await base.OnParametersSetAsync();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine("Authors - OnAfterRender - firstRender = " + firstRender);
+        base.OnAfterRender(firstRender);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Console.WriteLine("Authors - OnAfterRenderAsync - firstRender = " + firstRender);
+
+        //if (firstRender && Cities == null)
+        //{
+        //    Cities = await JSRuntime.InvokeAsync<string[]>("getCities");
+
+        //    StateHasChanged();
+        //}
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine("Authors - ShouldRender");
+        return base.ShouldRender();
+    }
+
+    public void Dispose()
+    {
+        Console.WriteLine("Authors - Dispose");
     }
 
     private async Task SaveAuthor()
     {
-        Results = false;//authorService.SaveAuthor(author);
+        Result = false;//await authorService.SaveAuthor(author);
         IsVisible = true;
 
         var firstName = author.FirstName;
         var lastName = author.LastName;
+
         RecordName = firstName + " " + lastName;
+
         author = new Author();
 
-        //await JSRuntime.InvokeVoidAsync("saveMessage",firstName,lastName);
-        await JSRuntime.InvokeVoidAsync("setFocusOnElement", firstNameText);
+        //await JSRuntime.InvokeVoidAsync("saveMessage", firstName, lastName);
+        await JSRuntime.InvokeVoidAsync("setFocusOnElement", firstNameTextBox);
+    }
+
+    private async Task DeleteAuthor(string authorId)
+    {
+        var confirm = await JSRuntime.InvokeAsync<bool>("confirmDelete");
+
+        if(confirm)
+            await authorService.DeleteAuthor(authorId);
     }
 }
