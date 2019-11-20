@@ -76,6 +76,20 @@ using BlazorApp.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Data\CuriousDrive\PublicProjects\BlazorApp\BlazorApp\_Imports.razor"
+using CuriousDriveRazorLibrary;
+
+#line default
+#line hidden
+#nullable disable
     public class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

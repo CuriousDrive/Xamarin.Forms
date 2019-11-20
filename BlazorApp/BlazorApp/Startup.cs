@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorApp.Data;
+using EmbeddedBlazorContent;
+using System.Net.Http;
 
 namespace BlazorApp
 {
@@ -32,6 +34,7 @@ namespace BlazorApp
 
             services.AddSingleton<IAuthorService, AuthorService>();
             services.AddSingleton<IPublisherService, PublisherService>();
+            services.AddSingleton<HttpClient>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +53,8 @@ namespace BlazorApp
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseEmbeddedBlazorContent(typeof(MatBlazor.BaseMatComponent).Assembly);
 
             app.UseRouting();
 

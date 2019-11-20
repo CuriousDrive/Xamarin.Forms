@@ -180,7 +180,7 @@
 
     private async Task SaveAuthor()
     {
-        Result = false;//await authorService.SaveAuthor(author);
+        Result = await authorService.SaveAuthor(author);
         IsVisible = true;
 
         var firstName = author.FirstName;

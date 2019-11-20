@@ -1,5 +1,6 @@
 ﻿@page "/publishers"
 @inject IPublisherService publisherService;
+@inject HttpClient Http;
 @inject IJSRuntime JSRuntime;
 @using BlazorApp.Data;
 
@@ -21,15 +22,7 @@
         <br />
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">city :</label>
-            <InputSelect @bind-Value="publisher.City" class="form-control col-3">
-                @if (@Cities != null)
-                {
-                    @foreach (var city in Cities)
-                    {
-                        <option value="@city">@city</option>
-                    }
-                }
-            </InputSelect>
+            <SelectCity></SelectCity>
             @*<InputText class="form-control col-3" @bind-Value="publisher.City" placeholder="city" />
                 &nbsp;<ValidationMessage For="@(() => publisher.City)" />*@
         </div>
@@ -49,25 +42,18 @@
 
     <h3><b>Publishers</b></h3>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>PublisherId</th>
-                <th>Publisher Name</th>
-                <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var publisher in publisherList)
-            {
-                <tr>
-                    <td>@publisher.Pub_Id</td>
-                    <td>@publisher.Publisher_Name</td>
-                    <td>@publisher.City</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <MatTable Items="@publisherList" Striped="true" AllowSelection="true" RowClass="tester" class="mat-elevation-z5">
+        <MatTableHeader>
+            <th class="col-2">PublisherId</th>
+            <th class="col-6">Publisher Name</th>
+            <th class="col-4">City</th>
+        </MatTableHeader>
+        <MatTableRow>
+            <td>@context.Pub_Id</td>
+            <td>@context.Publisher_Name</td>
+            <td>@context.City</td>
+        </MatTableRow>
+    </MatTable>
 </div>
 
 @code {
@@ -80,7 +66,7 @@
     public bool IsVisible { get; set; }
     public string RecordName { get; set; }
     public bool Result { get; set; }
-    
+
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

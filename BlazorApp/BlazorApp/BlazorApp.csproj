@@ -4,4 +4,15 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EmbeddedBlazorContent" Version="1.9.0" />
+    <PackageReference Include="MatBlazor" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CuriousDriveRazorLibrary">
+      <HintPath>..\..\CuriousDriveRazorLibrary\CuriousDriveRazorLibrary\bin\Debug\netstandard2.0\CuriousDriveRazorLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
