@@ -15,21 +15,20 @@ namespace BookStoresWebAPI.Models
         {
         }
 
-        public virtual DbSet<Author> Author { get; set; }
-        public virtual DbSet<Book> Book { get; set; }
-        public virtual DbSet<BookAuthor> BookAuthor { get; set; }
-        public virtual DbSet<Job> Job { get; set; }
-        public virtual DbSet<Publisher> Publisher { get; set; }
-        public virtual DbSet<Sale> Sale { get; set; }
-        public virtual DbSet<Store> Store { get; set; }
-        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Author> Authors { get; set; }
+        public virtual DbSet<Book> Books { get; set; }
+        public virtual DbSet<BookAuthor> BookAuthors { get; set; }
+        public virtual DbSet<Job> Jobs { get; set; }
+        public virtual DbSet<Publisher> Publishers { get; set; }
+        public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<Store> Stores { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=BookStoresDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Name=BookStoresDB");
             }
         }
 
@@ -37,6 +36,8 @@ namespace BookStoresWebAPI.Models
         {
             modelBuilder.Entity<Author>(entity =>
             {
+                entity.ToTable("Author");
+
                 entity.Property(e => e.AuthorId).HasColumnName("author_id");
 
                 entity.Property(e => e.Address)
@@ -47,6 +48,11 @@ namespace BookStoresWebAPI.Models
                 entity.Property(e => e.City)
                     .HasColumnName("city")
                     .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.EmailAddress)
+                    .HasColumnName("email_address")
+                    .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.FirstName)
@@ -84,6 +90,8 @@ namespace BookStoresWebAPI.Models
 
             modelBuilder.Entity<Book>(entity =>
             {
+                entity.ToTable("Book");
+
                 entity.Property(e => e.BookId).HasColumnName("book_id");
 
                 entity.Property(e => e.Advance)
@@ -125,7 +133,7 @@ namespace BookStoresWebAPI.Models
                 entity.Property(e => e.YtdSales).HasColumnName("ytd_sales");
 
                 entity.HasOne(d => d.Pub)
-                    .WithMany(p => p.Book)
+                    .WithMany(p => p.Books)
                     .HasForeignKey(d => d.PubId)
                     .HasConstraintName("FK__Book__pub_id__6166761E");
             });
@@ -133,6 +141,8 @@ namespace BookStoresWebAPI.Models
             modelBuilder.Entity<BookAuthor>(entity =>
             {
                 entity.HasKey(e => new { e.AuthorId, e.BookId });
+
+                entity.ToTable("BookAuthor");
 
                 entity.Property(e => e.AuthorId).HasColumnName("author_id");
 
@@ -143,18 +153,20 @@ namespace BookStoresWebAPI.Models
                 entity.Property(e => e.RoyalityPercentage).HasColumnName("royality_percentage");
 
                 entity.HasOne(d => d.Author)
-                    .WithMany(p => p.BookAuthor)
+                    .WithMany(p => p.BookAuthors)
                     .HasForeignKey(d => d.AuthorId)
                     .HasConstraintName("FK__BookAutho__autho__43D61337");
 
                 entity.HasOne(d => d.Book)
-                    .WithMany(p => p.BookAuthor)
+                    .WithMany(p => p.BookAuthors)
                     .HasForeignKey(d => d.BookId)
                     .HasConstraintName("FK__BookAutho__book___42E1EEFE");
             });
 
             modelBuilder.Entity<Job>(entity =>
             {
+                entity.ToTable("Job");
+
                 entity.Property(e => e.JobId).HasColumnName("job_id");
 
                 entity.Property(e => e.JobDesc)
@@ -163,16 +175,14 @@ namespace BookStoresWebAPI.Models
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasDefaultValueSql("('New Position - title not formalized yet')");
-
-                entity.Property(e => e.MaxLvl).HasColumnName("max_lvl");
-
-                entity.Property(e => e.MinLvl).HasColumnName("min_lvl");
             });
 
             modelBuilder.Entity<Publisher>(entity =>
             {
                 entity.HasKey(e => e.PubId)
                     .HasName("PK__Publishe__2515F222DDC013AD");
+
+                entity.ToTable("Publisher");
 
                 entity.Property(e => e.PubId).HasColumnName("pub_id");
 
@@ -201,6 +211,8 @@ namespace BookStoresWebAPI.Models
 
             modelBuilder.Entity<Sale>(entity =>
             {
+                entity.ToTable("Sale");
+
                 entity.Property(e => e.SaleId).HasColumnName("sale_id");
 
                 entity.Property(e => e.BookId).HasColumnName("book_id");
@@ -231,18 +243,20 @@ namespace BookStoresWebAPI.Models
                     .IsFixedLength();
 
                 entity.HasOne(d => d.Book)
-                    .WithMany(p => p.Sale)
+                    .WithMany(p => p.Sales)
                     .HasForeignKey(d => d.BookId)
                     .HasConstraintName("FK__Sale2__book_id__756D6ECB");
 
                 entity.HasOne(d => d.Store)
-                    .WithMany(p => p.Sale)
+                    .WithMany(p => p.Sales)
                     .HasForeignKey(d => d.StoreId)
                     .HasConstraintName("FK__Sale2__store_id__76619304");
             });
 
             modelBuilder.Entity<Store>(entity =>
             {
+                entity.ToTable("Store");
+
                 entity.Property(e => e.StoreId)
                     .HasColumnName("store_id")
                     .HasMaxLength(4)
@@ -282,6 +296,8 @@ namespace BookStoresWebAPI.Models
                 entity.HasKey(e => e.UserId)
                     .HasName("PK_user_id")
                     .IsClustered(false);
+
+                entity.ToTable("User");
 
                 entity.Property(e => e.UserId)
                     .HasColumnName("user_id")
@@ -327,13 +343,13 @@ namespace BookStoresWebAPI.Models
                 entity.Property(e => e.PubId).HasColumnName("pub_id");
 
                 entity.HasOne(d => d.Job)
-                    .WithMany(p => p.User)
+                    .WithMany(p => p.Users)
                     .HasForeignKey(d => d.JobId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__Users__job_id__114A936A");
 
                 entity.HasOne(d => d.Pub)
-                    .WithMany(p => p.User)
+                    .WithMany(p => p.Users)
                     .HasForeignKey(d => d.PubId)
                     .HasConstraintName("FK__Users__pub_id__607251E5");
             });

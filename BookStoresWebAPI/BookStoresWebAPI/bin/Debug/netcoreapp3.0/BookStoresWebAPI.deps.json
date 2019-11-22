@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.0": {
       "BookStoresWebAPI/1.0.0": {
         "dependencies": {
+          "Bricelam.EntityFrameworkCore.Pluralizer": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
@@ -314,6 +315,17 @@
         },
         "compile": {
           "BookStoresWebAPI.dll": {}
+        }
+      },
+      "Bricelam.EntityFrameworkCore.Pluralizer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Bricelam.EntityFrameworkCore.Pluralizer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.CSharp/4.6.0": {},
@@ -2781,6 +2793,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bricelam.EntityFrameworkCore.Pluralizer/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-akiz3hGnpDgZssTGTnTehy7cy8gJ3RME7jULOkxWHuoSUUmkyxHO8USA/DDTz9Zc+o3RvTdY888NrjDcmb3OJA==",
+      "path": "bricelam.entityframeworkcore.pluralizer/1.0.0",
+      "hashPath": "bricelam.entityframeworkcore.pluralizer.1.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.6.0": {
       "type": "package",

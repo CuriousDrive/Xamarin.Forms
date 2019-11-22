@@ -7,14 +7,12 @@ namespace BookStoresWebAPI.Models
     {
         public Job()
         {
-            User = new HashSet<User>();
+            Users = new HashSet<User>();
         }
 
         public short JobId { get; set; }
         public string JobDesc { get; set; }
-        public byte MinLvl { get; set; }
-        public byte MaxLvl { get; set; }
 
-        public virtual ICollection<User> User { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

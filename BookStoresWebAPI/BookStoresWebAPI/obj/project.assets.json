@@ -2,6 +2,21 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "Bricelam.EntityFrameworkCore.Pluralizer/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Bricelam.EntityFrameworkCore.Pluralizer.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Bricelam.EntityFrameworkCore.Pluralizer.targets": {}
+        }
+      },
       "Microsoft.CSharp/4.6.0": {
         "type": "package",
         "compile": {
@@ -1254,6 +1269,20 @@
     }
   },
   "libraries": {
+    "Bricelam.EntityFrameworkCore.Pluralizer/1.0.0": {
+      "sha512": "akiz3hGnpDgZssTGTnTehy7cy8gJ3RME7jULOkxWHuoSUUmkyxHO8USA/DDTz9Zc+o3RvTdY888NrjDcmb3OJA==",
+      "type": "package",
+      "path": "bricelam.entityframeworkcore.pluralizer/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bricelam.entityframeworkcore.pluralizer.1.0.0.nupkg.sha512",
+        "bricelam.entityframeworkcore.pluralizer.nuspec",
+        "build/netstandard2.0/Bricelam.EntityFrameworkCore.Pluralizer.targets",
+        "lib/netstandard2.0/Bricelam.EntityFrameworkCore.Pluralizer.dll",
+        "lib/netstandard2.0/Bricelam.EntityFrameworkCore.Pluralizer.xml"
+      ]
+    },
     "Microsoft.CSharp/4.6.0": {
       "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
       "type": "package",
@@ -4893,6 +4922,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "Bricelam.EntityFrameworkCore.Pluralizer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.0.0"
     ]
@@ -4941,6 +4971,12 @@
     "frameworks": {
       "netcoreapp3.0": {
         "dependencies": {
+          "Bricelam.EntityFrameworkCore.Pluralizer": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[3.0.0, )"

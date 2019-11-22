@@ -33,13 +33,13 @@ namespace BookStoresWebAPI.Controllers
                 //author.Phone = "777-777-7777";
 
                 //remove author
-                Author author = context.Author.Where(auth => auth.FirstName == "John").FirstOrDefault();
-                context.Author.Remove(author);
+                //Author author = context.Author.Where(auth => auth.FirstName == "John").FirstOrDefault();
+                //context.Author.Remove(author);
 
-                context.SaveChanges();
+                //context.SaveChanges();
 
                 //get author by id
-                return context.Author.Where(auth => auth.FirstName == "John").ToList();
+                return null;//context.Author.ToList();
             }
         }
     }
