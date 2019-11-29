@@ -9,7 +9,7 @@ namespace BlazorApp.Data
 {
     public class Author
     {   
-        public string AuthorId { get; set; }
+        public int AuthorId { get; set; }
         
         [Required(ErrorMessage = "First name is required")]
         public string FirstName { get; set; }        
@@ -26,14 +26,14 @@ namespace BlazorApp.Data
         [Range(10000,99999999,ErrorMessage ="Salary can not be less than 10000")]
         public int Salary { get; set; }
         
-        public string PhoneNumber { get; set; }
+        public string Phone { get; set; }
         
 
         public Author()
         {
 
         }
-        public Author(string authorId, string firstName, string lastName, string emailAddress,int salary,
+        public Author(int authorId, string firstName, string lastName, string emailAddress,int salary,
                     string phoneNumber, string city)
         {
             AuthorId = authorId;
@@ -41,18 +41,18 @@ namespace BlazorApp.Data
             LastName = lastName;
             Salary = salary;
             EmailAddress = emailAddress;
-            PhoneNumber = phoneNumber;
+            Phone = phoneNumber;
             City = city;
         }
 
         public void clear()
         {
-            AuthorId = "";
+            AuthorId = 0;
             FirstName = "";
             LastName = "";
             Salary = 0;
             EmailAddress = "";
-            PhoneNumber = "";
+            Phone = "";
             City = "";
         }
     }

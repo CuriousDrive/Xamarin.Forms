@@ -2,47 +2,108 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BookStoresWebAPI.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-
+using Microsoft.EntityFrameworkCore;
+using BookStoresWebAPI.Models;
 
 namespace BookStoresWebAPI.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
     public class AuthorsController : ControllerBase
     {
-        
-        [HttpGet]
-        public IEnumerable<Author> Get()
+        private readonly BookStoresDBContext _context;
+
+        public AuthorsController(BookStoresDBContext context)
         {
-                        
-            using (var context = new BookStoresDBContext())
+            _context = context;
+        }
+
+        // GET: api/Authors
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Author>>> GetAuthors()
+        {
+            return await _context.Authors.ToListAsync();
+        }
+
+        // GET: api/Authors/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Author>> GetAuthor(int id)
+        {
+            var author = await _context.Authors.FindAsync(id);
+
+            if (author == null)
             {
-                //get all authors
-                //return context.Author.ToList();
-
-                //add a author
-                //Author author = new Author();
-                //author.FirstName = "John";
-                //author.LastName = "Smith";
-
-                //context.Author.Add(author);
-
-                //update 
-                //Author author = context.Author.Where(auth => auth.FirstName == "John").FirstOrDefault();
-                //author.Phone = "777-777-7777";
-
-                //remove author
-                //Author author = context.Author.Where(auth => auth.FirstName == "John").FirstOrDefault();
-                //context.Author.Remove(author);
-
-                //context.SaveChanges();
-
-                //get author by id
-                return context.Authors.ToList();
+                return NotFound();
             }
+
+            return author;
+        }
+
+        // PUT: api/Authors/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutAuthor(int id, Author author)
+        {
+            if (id != author.AuthorId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(author).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!AuthorExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // POST: api/Authors
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPost]
+        public async Task<ActionResult<Author>> PostAuthor(Author author)
+        {
+            _context.Authors.Add(author);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetAuthor", new { id = author.AuthorId }, author);
+        }
+
+        // DELETE: api/Authors/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Author>> DeleteAuthor(int id)
+        {
+            var author = await _context.Authors.FindAsync(id);
+            if (author == null)
+            {
+                return NotFound();
+            }
+
+            _context.Authors.Remove(author);
+            await _context.SaveChangesAsync();
+
+            return author;
+        }
+
+        private bool AuthorExists(int id)
+        {
+            return _context.Authors.Any(e => e.AuthorId == id);
         }
     }
 }

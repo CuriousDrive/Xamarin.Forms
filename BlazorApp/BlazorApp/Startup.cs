@@ -34,6 +34,7 @@ namespace BlazorApp
 
             services.AddSingleton<IAuthorService, AuthorService>();
             services.AddSingleton<IPublisherService, PublisherService>();
+
             services.AddSingleton<HttpClient>();
         }
 

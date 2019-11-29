@@ -8,7 +8,7 @@ namespace BlazorApp.Data
     interface IAuthorService
     {
         Task<List<Author>> GetAuthors();
-        Task<Author> GetAuthorById(string authorId);
+        Task<Author> GetAuthorById(int authorId);
         Task<bool> SaveAuthor(Author author);
         Task<bool> DeleteAuthor(string authorId);
     }

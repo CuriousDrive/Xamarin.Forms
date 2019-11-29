@@ -1,6 +1,7 @@
-﻿@page "/authors"
+﻿@page "/"
 @inject IAuthorService authorService;
 @inject IJSRuntime JSRuntime;
+@inject HttpClient Http;
 @implements IDisposable;
 @using BlazorApp.Data;
 
@@ -28,9 +29,9 @@
             &nbsp;<ValidationMessage For="@(() => author.LastName)" />
         </div>
         <br />
-        <div class="col-12 row">
+        @*<div class="col-12 row">
             <label class="col-2 font-weight-bold">city :</label>
-            @*<select @bind="author.City" class="form-control col-3">
+            <select @bind="author.City" class="form-control col-3">
                 @if (@Cities != null)
                 {
                     <option value="">select city..</option>
@@ -39,13 +40,13 @@
                         <option value="@city">@city</option>
                     }
                 }
-            </select>*@
+            </select>
             <SelectCity></SelectCity>
 
-            @*<InputText class="form-control col-3" @bind-Value="author.City" placeholder="city" />*@
+            <InputText class="form-control col-3" @bind-Value="author.City" placeholder="city" />
             &nbsp;<ValidationMessage For="@(() => author.City)" />
         </div>
-        <br />
+        <br />*@
         <div class="col-12 row">
             <label class="col-2 font-weight-bold">email address :</label>
             <InputText class="form-control col-3" @bind-Value="author.EmailAddress" placeholder="email address" />
@@ -81,9 +82,10 @@
                 <th>AuthorId</th>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>City</th>
+                @*<th>City</th>*@
                 <th>Email Address</th>
-                <th>Salary</th>
+                @*<th>Salary</th>*@
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -97,9 +99,14 @@
                 </td>
                 <td>@author.FirstName</td>
                 <td>@author.LastName</td>
-                <td>@author.City</td>
+                @*<td>@author.City</td>*@
                 <td>@author.EmailAddress</td>
-                <td>$@author.Salary</td>
+                @*<td>$@author.Salary</td>*@
+                <td><a style="text-underline-position:below; cursor:pointer; color:blue; font-weight:bold"
+                        @onclick="(() => EditAuthor(author))">Edit</a> | 
+                    <a style="text-underline-position:below; cursor:pointer; color:blue; font-weight:bold"
+                       @onclick ="(() => DeleteAuthor(author.AuthorId))">Delete</a>
+                </td>
             </tr>
             }
         </tbody>
@@ -130,7 +137,11 @@
         Console.WriteLine("Authors - OnInitializedAsync");
 
         author = new Author();
-        authorList = await authorService.GetAuthors();
+        //authorList = await authorService.GetAuthors();
+
+        authorList = new List<Author>();
+        authorList = await Http.GetJsonAsync<List<Author>>("https://localhost:44394/api/authors");
+        authorList = authorList.OrderByDescending(auth => auth.AuthorId).ToList();
 
         await base.OnInitializedAsync();
     }
@@ -178,9 +189,26 @@
         Console.WriteLine("Authors - Dispose");
     }
 
+    private async Task LoadAuthors()
+    {
+        authorList = await Http.GetJsonAsync<List<Author>>("https://localhost:44394/api/authors");
+        authorList = authorList.OrderByDescending(auth => auth.AuthorId).ToList();
+
+        StateHasChanged();
+
+    }
+
     private async Task SaveAuthor()
     {
-        Result = await authorService.SaveAuthor(author);
+        //Result = await authorService.SaveAuthor(author);
+        if(author.AuthorId == 0)
+            await Http.PostJsonAsync("https://localhost:44394/api/authors", author);
+        else
+            await Http.PutJsonAsync("https://localhost:44394/api/authors/" + author.AuthorId, author);
+
+        await LoadAuthors();
+
+        Result = true;
         IsVisible = true;
 
         var firstName = author.FirstName;
@@ -191,14 +219,18 @@
         author = new Author();
 
         //await JSRuntime.InvokeVoidAsync("saveMessage", firstName, lastName);
-        await JSRuntime.InvokeVoidAsync("setFocusOnElement", firstNameTextBox);
+        //await JSRuntime.InvokeVoidAsync("setFocusOnElement", firstNameTextBox);
     }
 
-    private async Task DeleteAuthor(string authorId)
+    private async Task DeleteAuthor(int authorId)
     {
-        var confirm = await JSRuntime.InvokeAsync<bool>("confirmDelete");
+        await Http.DeleteAsync("https://localhost:44394/api/authors/" + authorId);
 
-        if(confirm)
-            await authorService.DeleteAuthor(authorId);
+        await LoadAuthors();
+    }
+
+    private void EditAuthor(Author argAuthor)
+    {
+        author = argAuthor;
     }
 }
