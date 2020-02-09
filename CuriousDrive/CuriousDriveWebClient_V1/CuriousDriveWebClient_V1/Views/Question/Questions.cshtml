@@ -1,0 +1,127 @@
+﻿@model CuriousDriveWebClient.QuestionsViewModel;
+@{
+    ViewBag.Title = "Questions - Curious Drive";
+}
+
+@using (Html.BeginForm("Questions", "Question", FormMethod.Post, new { @class = "form-horizontal row card", role = "form" }))
+{
+
+    if (@Model != null)
+    {
+        <div class="col-lg-12 col-12">
+            <br />
+        </div>
+
+        <div class="col-lg-12 col-12">
+            <p class="bold-largest">Recent Questions</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default btn-primary" type="submit">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pagination-sm" style="text-align:left">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-sm-12 col-12">
+            <hr />
+        </div>
+
+
+        for (int i = 0; i < Model.questionsViewModel.Count; i++)
+        {
+            <div class="col-lg-12">
+
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            @Html.ActionLink(Model.questionsViewModel[i].questionTitle, "Question",
+                                                                 new
+                                                                 {
+                                                                     questionId = Model.questionsViewModel[i].questionId,
+                                                                     title = Model.questionsViewModel[i].questionTitleURL
+                                                                 }, new { @class = "bold-main-link" })
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-none d-md-block">
+                            <span>
+                                @Html.ActionLink(Model.questionsViewModel[i].answerCount + " answers", "Question",
+                                                                 new
+                                                                 {
+                                                                     questionId = Model.questionsViewModel[i].questionId,
+                                                                     title = Model.questionsViewModel[i].questionTitleURL
+                                                                 }, new { @class = "" })
+                                @Model.questionsViewModel[i].views views
+                                <br />
+                                asked on @String.Format("{0:MMM d, yyyy}", Convert.ToDateTime(Model.questionsViewModel[i].createdDate))
+
+                                @if (@Model.questionsViewModel[i].questionClassesViewModel != null && @Model.questionsViewModel[i].questionClassesViewModel.Count() > 0)
+                                {
+                                    <br />
+                                    for (int counter = 0; counter < @Model.questionsViewModel[i].questionClassesViewModel.Count(); counter++)
+                                    {
+                                        <button type="button" class="btn btn-circle" disabled>@Model.questionsViewModel[i].questionClassesViewModel[counter].className</button><span>&nbsp;</span>
+                                    }
+                                }
+
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-none d-md-block">
+                            <span>
+                                @await Html.PartialAsync("_UserDetails", Model.questionsViewModel[i].userDetailsViewModel)
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="col-4 d-md-none d-block">
+                        @Html.ActionLink(Model.questionsViewModel[i].answerCount + " answers", "Question",
+                                                             new
+                                                             {
+                                                                 id = Model.questionsViewModel[i].questionId,
+                                                                 title = Model.questionsViewModel[i].questionTitleURL
+                                                             }, new { @class = "" })
+                    </div>
+
+                    <div class="col-8 d-md-none d-block">
+                        @await Html.PartialAsync("_UserDetails", Model.questionsViewModel[i].userDetailsViewModel)
+                    </div>
+
+                    <div class="col-4 d-md-none d-block">
+                        @Model.questionsViewModel[i].views views
+                    </div>
+
+                    <div class="col-8 d-md-none d-block" style="text-align:right">
+                        asked on @String.Format("{0:MMM d, yyyy}", Convert.ToDateTime(Model.questionsViewModel[i].createdDate))
+                    </div>
+
+                    <div class="col-lg-12 col-12">
+                        <hr style="height:20%" />
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
+    <div class="col-lg-12 col-12">
+        <br />
+    </div>
+}

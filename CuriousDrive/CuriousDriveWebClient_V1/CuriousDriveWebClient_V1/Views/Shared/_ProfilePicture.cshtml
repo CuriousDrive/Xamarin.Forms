@@ -1,0 +1,14 @@
+﻿@model CuriousDriveWebClient.ProfilePictureViewModel;
+
+@if (Model.pictureUrl == null || Model.pictureUrl == string.Empty)
+{
+    <img class="profile_picture" src="~/Content/assets/global/img/profile_default.jpg" height="@Model.height" width="@Model.width" />
+}
+else if (Model.networkValue == "APP")
+{
+    <img class="profile_picture" src="@Url.Action("RenderImage","UserProfile", new { filepath = Model.pictureUrl })" height="@Model.height" width="@Model.width" />
+}
+else
+{
+    <img class="profile_picture" src="@Model.pictureUrl" height="@Model.height" width="@Model.width" />
+}

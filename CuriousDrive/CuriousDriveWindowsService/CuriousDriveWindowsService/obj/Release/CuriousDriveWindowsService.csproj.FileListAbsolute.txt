@@ -1,0 +1,8 @@
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\bin\Release\WindowServiceFileWatcher.exe.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\bin\Release\WindowServiceFileWatcher.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\obj\Release\CuriousDriveWindowsService.csprojAssemblyReference.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\obj\Release\WindowServiceFileWatcher.ProjectInstaller.resources
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\obj\Release\CuriousDriveWindowsService.csproj.GenerateResource.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\obj\Release\CuriousDriveWindowsService.csproj.CoreCompileInputs.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\obj\Release\WindowServiceFileWatcher.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWindowsService\CuriousDriveWindowsService\obj\Release\WindowServiceFileWatcher.pdb

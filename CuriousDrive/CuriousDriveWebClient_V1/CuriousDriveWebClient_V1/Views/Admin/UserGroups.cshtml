@@ -1,0 +1,74 @@
+﻿@model List<CuriousDriveWebClient.UserGroupViewModel>;
+
+@{
+    ViewBag.Title = "User Groups - Curious Drive";
+}
+
+@using (Html.BeginForm("UserGroups", "Admin", FormMethod.Post, new { @class = "form-horizontal row form-group card", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="col-lg-12">
+        <br />
+    </div>
+
+    if (Model != null)
+    {
+        <div class="col-lg-12 col-12">
+            <p class="bold-largest">User Groups</p>
+            <p>
+                You can search for user groups and add/remove users from them.
+            </p>
+            <hr />
+        </div>
+
+        <div class="input-group col-lg-6 col-12">
+            <input type="text" id="txtSearch" name="txtSearch" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+                <button class="btn btn-default btn-primary" type="submit">
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-12 col-12">
+            <br />
+        </div>
+
+        <div class="col-lg-12">
+            <div class="col-lg-12 col-12 grid">
+                <div class="col-lg-12 col-12 grid_header row">
+                    <div class="col-lg-3 col-9">
+                        Group Name
+                    </div>
+                    <div class="col-lg-7 d-none d-md-block">
+                        Description
+                    </div>
+                    <div class="col-lg-2 col-3">
+                        Status
+                    </div>
+
+                </div>
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <div class="col-lg-12 row">
+                        <div class="col-lg-3 col-9">
+                            @Html.ActionLink(@Model[i].groupName, "CreateUserGroup", new { aintUserGroupId = Model[i].userGroupId }, new { @class = "bold-main-link" })
+                        </div>
+                        <div class="col-lg-7 d-none d-md-block">
+                            @Model[i].groupDescription
+                        </div>
+                        <div class="col-lg-2 col-3">
+                            @Model[i].groupStatusDescription
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        
+    }
+
+    <div class="col-lg-12 col-12">
+        <br />
+    </div>
+
+}

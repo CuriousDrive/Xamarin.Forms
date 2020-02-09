@@ -1,0 +1,14 @@
+REST - 
+1. use query param to search for results in the DB 
+2. use path param other wise
+ 
+
+Java - 
+
+.NET - 
+
+MVC - 
+
+SQL - 
+
+

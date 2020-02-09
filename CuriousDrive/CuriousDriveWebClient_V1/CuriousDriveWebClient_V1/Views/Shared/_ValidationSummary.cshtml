@@ -1,0 +1,28 @@
+﻿@*@if (@Model.Any(lMessage => lMessage.idoMessage.severityValue == "ERRR"))
+{
+    <div class="alert alert-danger alert-dismissable fade in" style="display:inline-block;">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            if (@Model[i].idoMessage.severityValue == "ERRR")
+            {
+                @Model[i].idoMessage.displayMessage
+                <br />
+            }
+        }
+    </div>
+}
+@if (@Model.Any(lMessage => lMessage.idoMessage.severityValue == "INFO"))
+{
+    <div class="alert alert-success alert-dismissable fade in" style="display:inline-block;">        
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            if (@Model[i].idoMessage.severityValue == "INFO")
+            {
+                @Model[i].idoMessage.displayMessage
+                <br />
+            }
+        }
+    </div>
+}*@

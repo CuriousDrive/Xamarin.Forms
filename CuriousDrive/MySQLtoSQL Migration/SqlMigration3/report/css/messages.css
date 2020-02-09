@@ -1,0 +1,43 @@
+img {border: 0px;}
+.icons 	{  zoom:91%;position:relative;    top:3px; }
+.tableIcons 	{zoom:91%; position:relative;    top:0px;}
+.tablePlusIcons,.tableMinusIcons { position:relative; top:3px; }
+.selectedTable 	{  position:relative;    top:5px; }
+.unSelectedTable 	{ display:none; position:relative;    top:40px; }
+.panel  {position:relative;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFBBBBBB, gradientType=0 );
+    background:#ECECEC;width:100%;height:35px;
+    border-bottom:1px solid BLACK;border-top:1px solid BLACK;}
+a.nodeSel 
+{
+    background-color: #c0d2ec;
+}
+.unSelectedTab 
+{ 
+    position:relative;   top:4px;height:22px;
+    font-family:  Courier New, sans-serif; font-size: 12px;
+}
+.selectedTab 
+{ 
+    position:relative;   top:3px;height:22px;
+		
+    background-Color: #DFEEEE;
+    font-family:  Courier New, sans-serif; font-size: 12px;border:1px solid blue;
+}
+			
+.panel .add-nav {
+float:left;padding:0;margin:3px 0 0;
+list-style:none;overflow:hidden;
+}
+.panel .add-nav li {
+	float:left;height:26px;
+	border-left:1px solid gray;
+	padding:0 8px;
+}
+.panel .add-nav li:first-child {border:none;}
+.panel .add-nav .unSelectedTab {top:0;margin:4px 0 0;padding:1px;display:block;}
+.panel .add-nav .mover,
+.panel .add-nav .selectedTab {height:auto;margin:4px 0 0;display:block;top:0;}
+.panel .add-nav .mover {margin:4px 0 0;}
+.panel .add-nav > span {display:block;}
+.panel .add-nav img {vertical-align:bottom;}
+a[role='button'] { text-decoration: none; color: black; }

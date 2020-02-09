@@ -1,0 +1,96 @@
+::selection {
+  background-color:#1647d0;
+  color: #fff;
+}
+::-moz-selection {
+  background-color:#1647d0;
+  color: #fff;
+}
+
+
+a {
+  color:#1647d0;
+}
+
+.blog-item .more a:hover,
+.tab-style-1 .nav > li > a.active,
+.tab-style-1 .nav > li > a:hover,
+.m-btn-theme:hover,
+.m-btn-t-theme,
+.blog-item .blog-content h4 a:hover,
+.theme-color {
+  color:#1647d0;
+}
+
+
+.m-btn-theme2nd:hover,
+.tab-style-1 .nav > li > a:after,
+.form-group .input-focus-effect,
+.m-btn-t-theme:hover,
+.theme-after-bg:after,
+.theme-bg {
+  background:#1647d0;
+}
+
+.m-btn-theme2nd:hover,
+.m-btn-theme,
+.m-btn-t-theme,
+.border-theme,
+.btn-theme {
+  border-color:#1647d0;
+}
+
+.m-btn-theme,
+.theme-before:before,
+.theme-after:after,
+.theme-hover:hover,
+.theme-g-bg{
+   background:#1647d0;
+    background-image: -webkit-linear-gradient(45deg, #1647d0 0%, #3a8aec 100%);
+    background-image: linear-gradient(45deg, #1647d0 0%, #3a8aec 100%);
+}
+
+
+
+@media (max-width: 991px){
+  .header {
+    background:#1647d0;
+  }
+}
+
+
+/*
+ Second Color
+-----------------------*/
+.theme2nd-color {
+  color: #E8A165;
+}
+.tab-style-2 .nav-item .nav-link,
+.m-btn-theme2nd,
+.border-2nd {
+  border-color: #E8A165;
+}
+
+.feature-box-02 .fb4-list-type li:before,
+.tab-style-2 .nav-item .nav-link.active,
+.price-table .price-body li:after,
+.testimonial-col i,
+.m-btn-theme2nd,
+.theme-2nd {
+  background:  #E8A165;
+}
+
+.tab-style-1 .nav .nav-item a.active:after,
+.theme-2nd-before:before,
+.theme-2nd-after:after {
+ background:  #E8A165; 
+}
+
+.m-btn-white:hover {
+  background:  #E8A165;
+  border-color: #E8A165;
+}
+
+.help-text{
+  background: rgba(103,192,255,0.3);
+}

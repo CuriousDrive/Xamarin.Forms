@@ -1,0 +1,253 @@
+﻿@model CuriousDriveWebClient.QuestionViewModel;
+
+@{
+    ViewBag.Title = Model.questionTitle + " - Curious Drive";
+}
+
+<script src="~/Scripts/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+
+    // Initialize your tinyMCE Editor with your preferred options
+    tinymce.init({
+        selector: 'textarea',
+        menubar: false,
+        branding: false,
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor textcolor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table contextmenu paste code wordcount'
+        ],
+        toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat',
+        content_css: [
+            '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+            '//www.tinymce.com/css/codepen.min.css']
+    });
+
+</script>
+
+@using (Html.BeginForm("Question", "Question", FormMethod.Post, new { @class = "form-horizontal row ", role = "form", @id = "QuestionForm" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.questionId)
+    @Html.HiddenFor(model => model.questionTitleURL)
+
+    <div class="form-group">
+       
+        <div class="modal fade modal-share" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Share</h4>
+                        <br />
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <input id="txtShareQuestionLink" class="col-md-12 form-control" type="text" value="" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="questionForm" class="col-md-12 col-xs-12 card">
+
+            <div id='divQuestion' class="col-md-12 col-xs-12 row bootstrap-links">
+
+                <div class="col-md-12">
+                    @await Html.PartialAsync("_ClassList", Model.questionClassesViewModel)
+                </div>
+
+                <div class="bold-larger col-md-12 col-xs-12">
+                    @Html.DisplayFor(model => model.questionTitle, new { @class = "form-control" })
+                </div>
+
+                @if (Model.questionHtml != null)
+                {
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <div class="post-text">@Html.Raw(Model.questionHtml)</div>
+                    </div>
+                }
+                <div class="col-md-12 col-xs-12">
+                    <br />
+                </div>
+                <div class="col-md-12">
+                    @await Html.PartialAsync("_UserTagList", Model.userTagListViewModel)
+                </div>
+
+                <div class="col-md-8 d-none d-md-block" style="text-align:left;">
+                    viewed @Model.views times
+                    <br />
+                    asked on @String.Format("{0:MMM d, yyyy}", Convert.ToDateTime(Model.createdDate))
+                </div>
+                <div class="col-md-3 col-xs-8" style="text-align:right;">
+                    @await Html.PartialAsync("_UserDetails", Model.userDetailsViewModel)
+                </div>
+                <div class="col-xs-4 d-md-none d-block">
+                    views @Model.views
+                    <br />
+                    @String.Format("{0:MMM d, yy}", Convert.ToDateTime(Model.createdDate))
+                </div>
+                <div class="col-md-5" style="text-align:left;"></div>
+
+                <div class="col-md-12 col-xs-12">
+                    <hr />
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="col-md-6 col-xs-12 row small-font">
+                        <button class="col-md-2 col-xs-4 btn btn-link" type="submit" name="submitType" value="PostQuestionVoteUp"><span class="glyphicon glyphicon-triangle-top"></span> @Model.upVoteCount</button>
+                        <button class="col-md-2 col-xs-4 btn btn-link" type="submit" name="submitType" value="PostQuestionVoteDown"><span class="glyphicon glyphicon-triangle-bottom"></span> @Model.downVoteCount</button>
+                        <button class="col-md-3 col-xs-4 btn btn-link" type="button" data-toggle="modal" data-target=".modal-share"><span class="glyphicon glyphicon-share-alt"></span> share</button>
+                        <button class="col-md-2 hidden-xs hidden-sm btn btn-link" type="button" onclick="location.href='@Url.Action("AskQuestion","Question", new { questionId = Model.questionId })'"><span class="glyphicon glyphicon-edit"></span> edit</button>
+                        <button class="col-md-2 hidden-xs hidden-sm btn btn-link" type="button" onclick="location.href='@Url.Action("DeleteQuestion", "Question", new { questionId = @Model.questionId })'"><span class="glyphicon glyphicon-trash"></span> delete</button>
+                    </div>
+                </div>
+            </div>
+
+            @if (Model.commentsViewModel.Count > 0)
+            {
+                <div class="col-md-12 col-xs-12">
+                    <br />
+                </div>
+                foreach (var comment in Model.commentsViewModel)
+                {
+                    <div id="@string.Format("comment{0}",comment.commentId)" class="col-md-8 small-font">
+                        @comment.commentHtml  &mdash;
+                        @Html.ActionLink(comment.displayName, "Profile", "UserProfile", new { id = comment.userId, title = comment.urlTitle }, null)
+
+                    </div>
+                }
+            }
+
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+            <div id="divQuestionCommentEdit" class="col-md-12 row">
+                <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    @Html.TextBoxFor(m => m.questionComment, new { @class = "form-control col-sm-16 textarea-for-comment" })
+                </div>
+
+                <div class="col-md-1 col-lg-1 col-xs-12 col-sm-12">
+                    <button id="insertQuestionComment" class="btn btn-primary" type="submit" name="submitType" value="PostQuestionComment">comment</button>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+        </div>
+
+        <div id="questionAnswerForm" class="col-md-12 col-xs-12 card">
+
+            @if (Model.questionAnswersViewModel.Count > 0)
+            {
+                for (int i = 0; i < Model.questionAnswersViewModel.Count; i++)
+                {
+                    @Html.HiddenFor(model => Model.questionAnswersViewModel[i].questionAnswerId)
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+                    <div id="@string.Format("answer{0}", Model.questionAnswersViewModel[i].questionAnswerId)" class="col-md-12 col-xs-12 row bootstrap-links">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="post-text">@Html.Raw(Model.questionAnswersViewModel[i].answerHtml)</div>
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <br />
+                        </div>
+                        <div class="col-md-9 d-none d-md-block">
+                            answered on @String.Format("{0:MMM d, yyyy}", Convert.ToDateTime(Model.questionAnswersViewModel[i].createdDate))
+                        </div>
+                        <div class="col-xs-3 d-md-none d-block">
+                            @String.Format("{0:MMM d, yy}", Convert.ToDateTime(Model.questionAnswersViewModel[i].createdDate))
+                        </div>
+                        <div class="col-md-3 col-xs-9">
+                            @await Html.PartialAsync("_UserDetails", Model.questionAnswersViewModel[i].userDetailsViewModel)
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <hr />
+                        </div>
+                        <div class="col-md-12 col-xs-12">
+                            <div class="col-md-6 col-xs-12 row small-font">
+
+                                <button class="col-md-2 col-xs-4 btn btn-link" type="submit" name="submitType" value=@string.Format("PostQuestionAnswerVoteUp{0}",Model.questionAnswersViewModel[i].questionAnswerId)><span class="glyphicon glyphicon-triangle-top"></span> @Model.questionAnswersViewModel[i].upVoteCount</button>
+                                <button class="col-md-2 col-xs-4 btn btn-link" type="submit" name="submitType" value=@string.Format("PostQuestionAnswerVoteDown{0}",Model.questionAnswersViewModel[i].questionAnswerId)><span class="glyphicon glyphicon-triangle-bottom"></span> @Model.questionAnswersViewModel[i].downVoteCount</button>
+                                <button class="col-md-2 hidden-xs hidden-sm btn btn-link" type="button" onclick="editQuestionAnswer(this)"><span class="glyphicon glyphicon-edit"></span> edit</button>
+                                <button class="col-md-2 hidden-xs hidden-sm btn btn-link" type="button" onclick="location.href='@Url.Action("DeleteQuestionAnswer", "Question",new { questionAnswerId = @Model.questionAnswersViewModel[i].questionAnswerId, questionId = @Model.questionAnswersViewModel[i].questionId})'"><span class="glyphicon glyphicon-trash"></span> delete</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-12 col-xs-12">
+                        @foreach (var comment in @Model.questionAnswersViewModel[i].commentsViewModel)
+                        {
+                            <div id="@string.Format("comment{0}",comment.commentId)" class="col-md-8 col-xs-12 small-font">
+                                @comment.commentHtml &mdash;
+                                @Html.ActionLink(comment.displayName, "Profile", "UserProfile", new { id = comment.userId, title = comment.urlTitle }, null)
+                            </div>
+
+                        }
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+                    <div id="divQuestionAnswerCommentEdit" class="col-md-12 row">
+                        <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                            @Html.TextBoxFor(model => model.questionAnswersViewModel[i].questionAnswerComment, new { @class = "form-control col-sm-16 textarea-for-comment" })
+                        </div>
+                        
+                        <div class="col-md-1 col-lg-1 col-xs-12 col-sm-12">
+                            <button id="insertQuestionAnswerComment" class="btn btn-primary" type="submit" name="submitType" value="PostQuestionAnswerComment">comment</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <hr />
+                    </div>
+                }
+
+            }
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+            <div class="col-md-10 col-xs-12">
+                @Html.TextAreaFor(m => m.questionAnswerHtml, new { @class = "form-control" })
+                <br />
+                <button id="submitQuestionAnswer" class="btn btn-primary" type="submit" name="submitType" value="PostQuestionAnswer">answer the question</button>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+        </div>
+
+    </div>
+}
+<script type="text/javascript">
+
+    $('#shareModal').on('shown.bs.modal', function () {
+        $('#txtShareQuestionLink').focus();
+        $('#txtShareQuestionLink').select();
+    });
+
+</script>
+

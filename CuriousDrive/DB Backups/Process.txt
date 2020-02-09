@@ -1,0 +1,10 @@
+-- server commands 
+cd C:\Program Files\MySQL\MySQL Server 5.7\bin
+
+mysqldump -u root -p curiosite > curiosite_backup_01012019.sql
+
+copy curiosite_backup.sql to C:\Data\Curiouss Box\Workspace\CurioussBoxSource\DB Backup from C:\Program Files\MySQL\MySQL Server 5.7\bin
+
+-- clients commands 
+open mysql command line
+source C:\Data\Curiouss Box\Workspace\CurioussBoxSource\DB Backup\curiosite_backup_07122018.sql

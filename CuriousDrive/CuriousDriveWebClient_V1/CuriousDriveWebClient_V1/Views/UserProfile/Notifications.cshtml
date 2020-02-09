@@ -1,0 +1,62 @@
+﻿@model List<CuriousDriveWebClient.NotificationViewModel>
+@{
+    ViewBag.Title = "Your Notifications - Curious Drive";
+}
+
+<div class="col-md-12 col-xs-12">
+    <br />
+</div>
+
+@using (Html.BeginForm("Notifications", "UserProfile", FormMethod.Post, new { @class = "form-horizontal row card", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+
+        <form name="notificationForm" class="form-horizontal" role="form" novalidate>
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <p class="bold-largest">Your Notifications</p>
+                <hr />
+            </div>
+
+            <div class="form-group col-md-10 col-xs-12">
+                @if (Model.Count == 0)
+                {
+                    <div class="col-md-12 col-xs-12">
+                        There are no notifications to show
+                    </div>
+                }
+                @if (Model != null)
+                {
+                    for (int i = 0; i < Model.Count; i++)
+                    {
+                        <div class="col-md-12 notification_div hover_effect @(@Model[i].isRead == "N" ? "lightblue_background" : "")">
+                            <div class="col-md-1">
+                                @Html.PartialAsync("_ProfilePicture", Model[i].profilePictureViewModel) @*new ProfilePicture(Model[i].iFromUser.idoUser.pictureUrl, Model[i].iFromUser.idoUser.networkValue, 50, 50))*@
+                            </div>
+                            <div class="col-md-11">
+                                @Html.ActionLink(Model[i].fromDisplayName, "Profile", "UserProfile", new { id = Model[i].fromUserId, title = Model[i].fromURLTitle }, new { @style = "font-weight:bold;" }) @Model[i].notificationHeader
+                                <br />
+                                @if (Model[i].subsystemValue == "MNAN")
+                                {
+                                    @Html.ActionLink(@Model[i].notificationDetail, "Announcement", "Announcement", new { id = Model[i].referenceId, title = "" }, new { })
+                                }
+                                else
+                                {
+                                    @Html.ActionLink(@Model[i].notificationDetail, "Question", "Question", new { id = Model[i].referenceId, title = "" }, new { })
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr />
+                        </div>
+                    }
+                }
+            </div>
+        </form>
+    </div>
+
+}

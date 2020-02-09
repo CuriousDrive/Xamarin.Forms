@@ -1,0 +1,64 @@
+﻿@using CuriousDriveWebClient;
+
+@model CuriousDriveWebClient.UserProfileViewModel;
+
+@{
+    ViewBag.Title = @Model.displayName + " - User Profile";
+}
+
+@using (Html.BeginForm("UserProfile", "UserProfile", FormMethod.Post, new { @class = "form-horizontal row card", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <form name="userProfileForm" class="form-horizontal" role="form" novalidate>
+
+        <div class="col-lg-12 col-12">
+            <br />
+        </div>               
+
+        <div class="col-lg-12 col-12">
+
+            <div class="col-lg-12">
+                <br />
+            </div>
+
+            <div class="col-lg-12">
+                <span style="font-weight:bolder;font-size:x-large">News Feed</span>
+                <hr />
+            </div>
+
+            @foreach (NewsFeedViewModel newsFeed in Model.newsFeedsViewModel)
+            {
+                <div class="col-lg-12 hover_effect">
+
+                    <div class="col-lg-12">
+                        @Html.PartialAsync("_ProfilePicture", newsFeed.profilePictureViewModel)@*new ProfilePicture(lNewsFeed.istrUserPictureUrl, Model.idoUser.networkValue, 20, 20))*@
+
+                        @Html.ActionLink(newsFeed.userName, "Profile", "UserProfile",  new { id = newsFeed.userId, title = "" }, new { @class = "" })
+
+                    </div>
+
+                    <div class="col-lg-12 col-12">
+                        @if (newsFeed.postType == "QUES")
+                        {
+                            @Html.ActionLink(newsFeed.postTitle, "Question", "Question", new { id = newsFeed.postId, title = newsFeed.postTitleUrl }, new { @class = "bold-main-link" })
+                        }
+                        else if (newsFeed.postType == "ANNC")
+                        {
+                            @Html.ActionLink(newsFeed.postTitle, "Announcement", "Announcement",
+                                                                         new { id = newsFeed.postId, title = newsFeed.postTitleUrl }, new { @class = "bold-main-link" })
+                        }
+                    </div>
+                    <div class="col-lg-12 col-12">
+                        <span class="small">@newsFeed.createdDuration</span>
+                    </div>
+                    <div class="col-lg-12 col-12">
+                        <br />
+                    </div>
+
+                </div>
+            }
+        </div>
+
+    </form>
+}

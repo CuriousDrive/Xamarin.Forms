@@ -1,0 +1,23 @@
+body {margin:0;}
+.expander-left:hover {background:url(../img/expander_button_h.gif) no-repeat;}
+.expander-left {position:fixed;left:0;top:50%;width:9px;height:50px;background:none;margin:-25px 0 0;}
+.expander-left span {display:block;width:5px;height:10px;margin:20px 2px 0;background:url(../img/expander_arrow_left.gif) no-repeat;}
+.expander-left.close span {background:url(../img/expander_arrow_right.gif) no-repeat;}
+.tree {font:11px Verdana, Geneva, Arial, Helvetica, sans-serif;color: #666;white-space: nowrap;}
+.tree img {border: 0;float:left;}
+.tree a {color: #333;text-decoration: none;}
+.tree a.node, .tree a.nodeSel {white-space: nowrap;float:left;padding: 1px 2px 1px 2px;}
+.tree a.node:hover, .tree a.nodeSel:hover {color: #333;text-decoration: underline;}
+.tree a.nodeSel {background:#c0d2ec;}
+.tree .clip {overflow: hidden;}
+.dTreeNode {margin:20px 0 0 14px;overflow:hidden;padding:0;list-style:none;}
+.dTreeNode .holder {width:100%;overflow:hidden;}
+.dTreeNode a.open-close.open {background:url(../img/nolines_minus.gif) no-repeat;}
+.dTreeNode a.open-close {float:left;width:18px;height:18px;background:url(../img/nolines_plus.gif) no-repeat 0 50%;margin:-1px -2px 0 0;}
+.dTreeNode li {width:100%;overflow:hidden;display:block;padding:2px 0 0;}
+.dTreeNode ul {
+	padding:0;	margin:0 0 0 14px;	list-style:none;
+}
+.dTreeNode ul ul {}
+.hidden {display:none;}
+.dTreeNode a.empty {float:left;width:18px;height:18px;margin:-1px -2px 0 0;}

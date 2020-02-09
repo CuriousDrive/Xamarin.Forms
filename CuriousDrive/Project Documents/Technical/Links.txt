@@ -1,0 +1,13 @@
+http://localhost:8080/CuriousDriveWebService/questions/questionViews/
+
+http://localhost:8080/serviceCuriouss/questions/questions/getQuestionsByThread?astrThread=cosmology&astrType=recent
+
+http://localhost:8080/api/users/user/getNotifications/2
+
+http://localhost:8080/api/announcements/announcements/
+
+http://localhost:8080/api/admin/bookADemo?astrEmailAddress=fahadmullaji@gmail.com
+
+http://www.curiousdrive.com:8080/CuriousDriveWebService/admin/bookADemo?astrEmailAddress=fahadmullaji@gmail.com
+
+http://54.144.58.168:8080/CuriousDriveWebService/admin/bookADemo?astrEmailAddress=fahadmullaji@gmail.com

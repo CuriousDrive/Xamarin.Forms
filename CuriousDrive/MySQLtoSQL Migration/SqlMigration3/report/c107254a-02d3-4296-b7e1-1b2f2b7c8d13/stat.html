@@ -1,0 +1,242 @@
+
+<head>
+  <title>Conversion statistics section</title>
+  <link rel="stylesheet" type="text/css" href="../textstyles.css"></link>
+  <script type="text/javascript">function init() {
+    try {
+        var height = top.getCatHeight();
+        h = height - 350;
+        var eDiv = document.getElementById('innerDiv');
+        var str = window.parent.document.location.toString();
+        if (str.lastIndexOf('srcIndex') > 0) {
+            h -= 35;
+        }
+
+        eDiv.style.height = h;
+    } catch(e) {
+        var eDiv = document.getElementById('innerDiv');
+        eDiv.style.height = '100%';
+        eDiv.style.overflowY='visible';
+    }
+}
+
+var lastTimeoutId = null;
+function doResize() {
+    if (lastTimeoutId != null) {
+        clearTimeout(lastTimeoutId);
+    }
+
+    lastTimeoutId = setTimeout(checkSize, 50);
+}
+
+function checkSize() {
+    try {
+        var height = top.getCatHeight();
+        h = height - 185;
+        var eDiv = document.getElementById('innerDiv');
+        var str = window.parent.document.location.toString();
+        if (str.lastIndexOf('srcIndex') > 0) {
+            h -= 35;
+        }
+
+        var mh = top.getMessagesHeight();
+        h -= mh;
+        eDiv.style.height = h;
+    } catch(e) { }
+}</script>
+</head>
+<body style="HEIGHT: 100%; WIDTH: 100%; TEXT-ALIGN: center; background-color:white" onresize="javascript:doResize();" onload="javascript:init();">
+  <table style="WIDTH: 380px; TABLE-LAYOUT: fixed" align="center">
+    <tbody>
+      <tr>
+        <td style="BORDER-TOP-STYLE: none; BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: white">
+          <div id="mainDiv" style="WIDTH: 370px" align="center">
+            <table style="WIDTH: 370px; BORDER-COLLAPSE: collapse;" align="center" id="st_head">
+              <caption>
+                <div valign="middle" align="center" height="50">
+                  <b>Conversion statistics</b>
+                </div>
+              </caption>
+              <colgroup>
+                <col style="WIDTH: 141px"></col>
+                <col style="WIDTH: 51px"></col>
+                <col style="WIDTH: 81px"></col>
+                <col style="WIDTH: 81px"></col>
+              </colgroup>
+              <tbody>
+                <tr height="35">
+                  <th>Statement Type</th>
+                  <th>Total</th>
+                  <th>Converted</th>
+                  <th>Not converted</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="innerDiv" style="height: 100%; width: 355px; overflow-y: visible;">
+            <div style="OVERFLOW-Y: auto; MARGIN: 0px"></div>
+            <div></div>
+            <table id="st_head" style="WIDTH: 370px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" align="center">
+              <tbody>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">ALL</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">21</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">auto-increment-column</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">auto-increment-option</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">column-declaration</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">8</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">constraint-primary-key-clause</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">create-relation-table-statement</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">create-statement</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">create-table-statement</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">default-column-value</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">5</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">sql-statement</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+                <tr height="35">
+                  <td style="WIDTH: 140px">
+                    <span style="POSITION: relative; LEFT: 6px">table-constraint</span>
+                  </td>
+                  <td style="WIDTH: 50px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">1</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 20px; POSITION: relative">100 %</span>
+                  </td>
+                  <td style="WIDTH: 80px" align="right">
+                    <span style="RIGHT: 6px; POSITION: relative">0</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>

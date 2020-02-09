@@ -1,0 +1,28 @@
+﻿@model CuriousDriveWebClient.FeedbackViewModel;
+
+@{
+    ViewBag.Title = "Feedback - Curious Drive";
+}
+
+@using (Html.BeginForm("Feedback", "Admin", FormMethod.Post, new { @class = "form-horizontal row card", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    <form name="feedbackForm" class="form-horizontal" role="form" novalidate>
+        <div class="form-group col-lg-12 col-12">
+
+            <div class="col-lg-12 col-12">
+
+                <div class="col-lg-12 col-12">
+                    <br />
+                </div>             
+            
+            </div>
+
+            <div class="col-lg-12 col-12">
+                <br />
+            </div>
+
+        </div>
+    </form>
+}

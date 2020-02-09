@@ -1,0 +1,155 @@
+﻿@model CuriousDriveWebClient.AnnouncementViewModel;
+
+@{
+    ViewBag.Title = "Announcement - Curious Drive";
+}
+
+
+@using (Html.BeginForm("Announcement", "Announcement", FormMethod.Post, new { @class = "form-horizontal row", role = "form", @id = "AnnouncementForm" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.announcementId)
+    @Html.HiddenFor(m => m.announcementTitleURL)
+
+    <div class="form-group">
+
+        <div class="col-md-12">
+            <br />
+        </div>
+
+        <div class="modal fade modal-share" id="shareModal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="gridSystemModalLabel">Share</h4>
+                        <br />
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <input id="txtShareAnnouncementLink" class="col-md-12 form-control" type="text" value="" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="announcementForm" class="col-md-12 col-xs-12 card">
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+            <div id='divAnnouncement' class="col-md-12 col-xs-12 row bootstrap-links">
+
+                <div class="bold-largest col-md-12 col-xs-12">
+                    @Html.DisplayFor(model => model.announcementTitle, new { @class = "form-control" })
+                </div>
+                @if (Model.announcementHtml != null)
+                {
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+
+                    <div class="col-md-12 col-xs-12">
+                        <div class="post-text">@Html.Raw(Model.announcementHtml)</div>
+                    </div>
+                }
+                <div class="col-md-12 col-xs-12">
+                    <br />
+                </div>
+
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    @Html.PartialAsync("_UserTagList", Model.userTagListViewModel)
+                </div>
+
+                <div class="col-md-8 hidden-sm hidden-xs" style="text-align:left;">
+                    @*viewed @Model.iintViews times*@
+                    <br />
+                    announced on @String.Format("{0:MMM d, yyyy}", Convert.ToDateTime(Model.createdDate))
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    @Html.PartialAsync("_UserDetails", Model.userDetailsViewModel)
+                </div>
+
+                <div class="col-xs-12 hidden-md hidden-lg" style="text-align:right">
+                    @*views @Model.iintViews*@
+                    <br />
+                    @String.Format("{0:MMM d, yy}", Convert.ToDateTime(Model.createdDate))
+                </div>
+                <div class="col-md-5" style="text-align:left;"></div>
+                <div class="col-md-12 col-xs-12">
+                    <hr />
+                </div>
+                <div class="col-md-12 col-xs-12">
+                    <div class="col-md-6 col-xs-12 row small-font">
+                        <button class="col-md-3 col-xs-4 btn btn-link" type="button" data-toggle="modal" data-target=".modal-share"><span class="glyphicon glyphicon-share-alt"></span> share</button>
+                        @if (Model.isOwner)
+                        {
+                            <button class="col-md-2 hidden-xs hidden-sm btn btn-link" type="button" onclick="location.href='@Url.Action("MakeAnAnnouncement","Announcement", new { aintAnnouncementId = Model.announcementId })'"><span class="glyphicon glyphicon-edit"></span> edit</button>
+
+                            <button class="col-md-2 hidden-xs hidden-sm btn btn-link" type="button" onclick="location.href='@Url.Action("DeleteAnnouncement", "Announcement", new { aintAnnouncementId = @Model.announcementId })'"><span class="glyphicon glyphicon-trash"></span> delete</button>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div id="divAnnouncementComments" class="col-md-12 col-xs-12">
+                @if (Model.commentsViewModel.Count > 0)
+                {
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+                    foreach (var comment in Model.commentsViewModel)
+                    {
+                        <div id="@string.Format("comment{0}",comment.commentId)" class="col-md-8 small-font">
+                            @comment.commentHtml  &mdash;
+                            @Html.ActionLink(comment.displayName, "Profile", "UserProfile", new { id = comment.userId, title = comment.urlTitle }, null)
+                        </div>
+                    }
+                }
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+            <div id="divAnnouncementCommentEdit" class="col-md-12">
+                <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                    @Html.TextBoxFor(m => m.announcementComment, new { @class = "form-control col-sm-16 textarea-for-comment" })
+                </div>
+                <div class="col-sm-12 col-xs-12 hidden-md hidden-lg">
+                    <br />
+                </div>
+                <div class="col-md-1 col-lg-1 col-xs-12 col-sm-12">
+                    <button id="insertAnnouncementComment" class="btn btn-primary" type="submit" name="submitType" value="PostAnnouncementComment">comment</button>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-xs-12">
+            <div class="col-md-12 col-xs-12">
+                <br />
+            </div>
+        </div>
+    
+    </div>
+}
+<script type="text/javascript">
+
+    //(adsbygoogle = window.adsbygoogle || []).push({});
+
+    $('#shareModal').on('shown.bs.modal', function () {
+        $('#txtShareAnnouncementLink').focus();
+        $('#txtShareAnnouncementLink').select();
+    });
+
+</script>
+

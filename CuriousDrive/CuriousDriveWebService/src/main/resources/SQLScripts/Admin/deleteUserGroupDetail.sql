@@ -1,0 +1,1 @@
+DELETE FROM tran_user_group_detail WHERE USER_GROUP_ID = ?

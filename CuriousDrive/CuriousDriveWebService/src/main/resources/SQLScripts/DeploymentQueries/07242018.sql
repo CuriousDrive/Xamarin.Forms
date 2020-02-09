@@ -1,0 +1,20 @@
+RENAME TABLE sys_levels TO sys_level;
+RENAME TABLE sys_messages TO sys_message;
+RENAME TABLE sys_user_roles TO sys_user_role;
+RENAME TABLE sys_users TO sys_user;
+RENAME TABLE sys_roles TO sys_role;
+
+RENAME TABLE tran_announcements TO tran_announcement;
+RENAME TABLE tran_classes TO tran_class;
+RENAME TABLE tran_comments TO tran_comment;
+RENAME TABLE tran_notifications TO tran_notification;
+RENAME TABLE tran_points TO tran_point;
+RENAME TABLE tran_post_votes TO tran_post_vote;
+RENAME TABLE tran_question_answers TO tran_question_answer;
+RENAME TABLE tran_question_classes TO tran_question_class;
+RENAME TABLE tran_question_favorites TO tran_question_favorite;
+RENAME TABLE tran_question_valids TO tran_question_valid;
+RENAME TABLE tran_question_views TO tran_question_view;
+RENAME TABLE tran_questions TO tran_question;
+RENAME TABLE tran_tags TO tran_tag;
+RENAME TABLE tran_threads TO tran_thread;

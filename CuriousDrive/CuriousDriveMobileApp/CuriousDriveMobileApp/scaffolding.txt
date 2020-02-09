@@ -1,0 +1,1 @@
+Scaffold-DbContext -force "Server=SAGITEC-0142\SQLEXPRESS;Database=CuriousDrive;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir CuriousDrive/Models

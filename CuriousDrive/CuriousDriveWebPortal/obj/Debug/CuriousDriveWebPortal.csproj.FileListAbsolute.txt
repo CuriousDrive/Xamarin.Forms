@@ -1,0 +1,284 @@
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\ApplicationInsights.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.dll.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.pdb
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csc.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csc.exe.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csc.rsp
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csi.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csi.exe.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csi.rsp
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.AppContext.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Collections.Immutable.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Console.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.Process.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.Compression.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.Pipes.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.AccessControl.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Claims.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Threading.Thread.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.ValueTuple.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.XPath.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\vbc.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\vbc.exe.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\vbc.rsp
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\VBCSCompiler.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\VBCSCompiler.exe.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Antlr3.Runtime.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveService.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.Web.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.WindowsServer.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.ApplicationInsights.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.Web.Infrastructure.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Newtonsoft.Json.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Helpers.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Mvc.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Optimization.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Razor.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Deployment.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Razor.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\WebGrease.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\RestSharp.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveService.pdb
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveService.dll.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Helpers.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Mvc.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Optimization.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Razor.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Deployment.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Razor.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Newtonsoft.Json.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Antlr3.Runtime.pdb
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.WindowsServer.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.Web.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\bin\RestSharp.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csprojAssemblyReference.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csproj.CoreCompileInputs.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csproj.CopyComplete
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.pdb
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\ApplicationInsights.config
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.dll.config
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.pdb
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csc.exe
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csc.exe.config
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csc.rsp
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csi.exe
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csi.exe.config
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\csi.rsp
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.AppContext.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Collections.Immutable.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Console.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.Process.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.Compression.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.IO.Pipes.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.AccessControl.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Claims.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Threading.Thread.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.ValueTuple.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.XPath.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\vbc.exe
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\vbc.exe.config
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\vbc.rsp
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\VBCSCompiler.exe
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\roslyn\VBCSCompiler.exe.config
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Antlr3.Runtime.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.Web.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.WindowsServer.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.ApplicationInsights.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.Web.Infrastructure.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Newtonsoft.Json.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Helpers.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Mvc.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Optimization.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Razor.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Deployment.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Razor.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\WebGrease.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Helpers.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Mvc.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Optimization.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.Razor.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Deployment.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Web.WebPages.Razor.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Newtonsoft.Json.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Antlr3.Runtime.pdb
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.WindowsServer.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.AI.Web.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csproj.CoreCompileInputs.cache
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csproj.CopyComplete
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.dll
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.pdb
+C:\Data\CuriousDrive\CurioussBoxSource\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csprojAssemblyReference.cache
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\ApplicationInsights.config
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.dll.config
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\CuriousDriveWebPortal.pdb
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\csc.exe
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\csc.exe.config
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\csc.rsp
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\csi.exe
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\csi.exe.config
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\csi.rsp
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.AppContext.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Collections.Immutable.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Console.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.Process.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.IO.Compression.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.IO.Pipes.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Reflection.Metadata.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.AccessControl.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.Claims.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Threading.Thread.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.ValueTuple.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Xml.XPath.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\vbc.exe
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\vbc.exe.config
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\vbc.rsp
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\VBCSCompiler.exe
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\roslyn\VBCSCompiler.exe.config
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Antlr3.Runtime.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.DependencyCollector.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.Web.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.WindowsServer.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.ApplicationInsights.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.Web.Infrastructure.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Newtonsoft.Json.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Helpers.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Mvc.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Optimization.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Razor.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.WebPages.Deployment.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.WebPages.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.WebPages.Razor.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\WebGrease.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Helpers.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Mvc.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Optimization.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.Razor.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.WebPages.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.WebPages.Deployment.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Web.WebPages.Razor.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Newtonsoft.Json.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Antlr3.Runtime.pdb
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.DependencyCollector.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.WindowsServer.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.AI.Web.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csproj.CoreCompileInputs.cache
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csproj.CopyComplete
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.dll
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.pdb
+C:\Data\CuriousDrive\CuriousDriveRepo\CuriousDriveWebPortal\obj\Debug\CuriousDriveWebPortal.csprojAssemblyReference.cache

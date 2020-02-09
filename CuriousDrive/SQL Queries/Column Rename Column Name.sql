@@ -1,0 +1,7 @@
+SELECT
+
+'EXEC sp_rename ''' + TABLE_SCHEMA + '.' + TABLE_NAME + ''', ''' + UPPER(TABLE_NAME) + ''''--',''TABLE'''
+
+FROM INFORMATION_SCHEMA.TABLES t
+
+WHERE OBJECTPROPERTY(OBJECT_ID('[' + TABLE_SCHEMA + '].[' + TABLE_NAME + ']'),'isMSShipped') = 0

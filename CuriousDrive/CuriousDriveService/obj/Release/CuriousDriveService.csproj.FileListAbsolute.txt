@@ -1,0 +1,12 @@
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\CuriousDriveService.dll.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\CuriousDriveService.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\CuriousDriveService.pdb
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\Newtonsoft.Json.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\RestSharp.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\Newtonsoft.Json.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\bin\Release\RestSharp.xml
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\obj\Release\CuriousDriveService.csprojAssemblyReference.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\obj\Release\CuriousDriveService.csproj.CoreCompileInputs.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\obj\Release\CuriousDriveService.csproj.CopyComplete
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\obj\Release\CuriousDriveService.dll
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\CuriousDriveService\obj\Release\CuriousDriveService.pdb

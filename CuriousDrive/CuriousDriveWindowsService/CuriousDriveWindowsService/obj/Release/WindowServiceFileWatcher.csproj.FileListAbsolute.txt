@@ -1,0 +1,8 @@
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\bin\Release\WindowServiceFileWatcher.exe.config
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\bin\Release\WindowServiceFileWatcher.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\obj\Release\WindowServiceFileWatcher.ProjectInstaller.resources
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\obj\Release\WindowServiceFileWatcher.csproj.GenerateResource.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\obj\Release\WindowServiceFileWatcher.csproj.CoreCompileInputs.cache
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\obj\Release\WindowServiceFileWatcher.exe
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\obj\Release\WindowServiceFileWatcher.pdb
+C:\Data\Curiouss Box\Workspace\CurioussBoxSource\WindowServiceFileWatcher\WindowServiceFileWatcher\bin\Release\WindowServiceFileWatcher.pdb

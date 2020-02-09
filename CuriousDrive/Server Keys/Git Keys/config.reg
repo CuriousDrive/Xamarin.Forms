@@ -1,0 +1,3 @@
+Windows Registry Editor Version 5.00
+  [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\SshHostKeys]
+  "rsa2@22:git-codecommit.us-east-1.amazonaws.com"="AAAAB3NzaC1yc2EAAAABJQAAAQEAmXZ+BGYmB944ei/r9teEmcR8FBWCwSBqFdSdze9r5w7Rmo2mVcQTb9W6K34V+/w5XviLomnljZq4nHipHz1D0OULc9Vz8Esb/j4QZHasi4q7DCGvf4+In7T0Yl0I1h3r2d5DkauLkB4YwXJuVwv9kcL0m9VTr/pf1uxWuY2609LHOkEuPdQ31WWcp3y2oH1wlm8NVaIcHpMIn5yDp9wB9/2sS67GlztrydK7b1yjkU2ho10u/YwgF+ImDVXYwANjz0z6Sf/qy77TYRGk6XjL+/OjDKkHLecndIIHjGHpVeF9N1iw2s/80c4LgRZ+TVbrQVeoZk677YsAIwirM5VFGQ"

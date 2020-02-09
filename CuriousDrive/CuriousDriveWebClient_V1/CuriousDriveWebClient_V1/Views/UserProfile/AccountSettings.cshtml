@@ -1,0 +1,81 @@
+﻿@model CuriousDriveWebClient.AccountSettingsViewModel;
+
+@{
+    ViewBag.Title = "Account Settings - Curious Drive";
+}
+@using (Html.BeginForm("AccountSettings", "UserProfile", FormMethod.Post, new { @class = "form-horizontal row", role = "form", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="row">
+        <form name="categoryForm" class="form-horizontal" role="form" novalidate>
+
+            <div class="col-md-12 col-xs-12">
+                <br />  
+            </div>
+            <div class="col-md-12 col-xs-12 card">
+                <div class="col-md-12 col-xs-12">
+                    <br />
+                </div>
+
+                <div class="col-md-12 col-xs-12">
+                    <p class="bold-largest">Edit your profile</p>
+                    <hr />
+                </div>             
+
+                <div class="col-md-6">
+                    
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.firstName, new { @class = "form-control", placeholder = "first name" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.lastName, new { @class = "form-control", placeholder = "last name" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.occupation, new { @class = "form-control", placeholder = "occupation" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextAreaFor(m => m.aboutMe, new { @class = "form-control", placeholder = "about me" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.phoneNumber, new { @class = "form-control", placeholder = "phone number" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.facebookUrl, new { @class = "form-control", placeholder = "facebook profile link" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.twitterUrl, new { @class = "form-control", placeholder = "twitter handle" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        @Html.TextBoxFor(m => m.instagramUrl, new { @class = "form-control", placeholder = "instagram link" })
+                        <br />
+                    </div>
+                    <div class="col-md-12">
+                        <button id="submitQuestion" class="btn btn-primary" type="submit">Save</button>
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <br />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="col-md-12">
+                        @Html.PartialAsync("_ProfilePicture", Model.profilePictureViewModel)@*new ProfilePicture(Model.idoUser.pictureUrl, Model.idoUser.networkValue, 200, 200))*@
+                    </div>
+                    <div class="col-md-12" style="text-align:center">
+                        @Html.ActionLink("Change Picture", "UploadProfilePicture", new { id = Model.userId })
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+}

@@ -1,0 +1,27 @@
+﻿@model CuriousDriveWebClient.UploadProfilePictureViewModel;
+
+<div class="col-md-12">
+    <br />
+</div>
+
+@using (Html.BeginForm("UploadProfilePicture", "UserProfile", FormMethod.Post, new { @class = "form-horizontal row card", enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <form name="changePictureForm" class="form-horizontal" role="form" novalidate>
+            <div class="col-md-12">
+                @Html.HiddenFor(model => model.userId)
+                <br />
+                <input id="changePicture" class="btn btn-primary" type="file" name="aHttpPostedFileBase" accept=".jpg">
+            </div>
+            <div class="col-md-12">
+                <br />
+                <input type="submit" class="btn btn-primary" value="Upload" />
+            </div>
+            <div class="col-md-12">
+                <br />
+            </div>
+        </form>
+    </div>
+}
+    

@@ -1,0 +1,20 @@
+﻿@model CuriousDriveWebClient.UserDetailsViewModel;
+
+<div class="row">
+    <div class="col-lg-2 d-none d-md-block">
+        @await Html.PartialAsync("_ProfilePicture", Model.profilePictureViewModel)@*new ProfilePicture(Model.idoUser.pictureUrl, Model.idoUser.networkValue, 40, 40))*@
+
+    </div>
+    <div class="col-lg-12 d-none d-md-block">
+        @Html.ActionLink(Model.displayName, "UserProfile", "UserProfile", new { id = Model.userId, title = Model.urlTitle }, new { @class = "" })
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3 d-md-none d-block">
+        @await Html.PartialAsync("_ProfilePicture", Model.profilePictureViewModel)@*new ProfilePicture(Model.idoUser.pictureUrl, Model.idoUser.networkValue, 20, 20))*@
+    </div>
+    <div class="col-lg-9 col-xl-9 col-md-9 col-9">
+
+    </div>
+</div>

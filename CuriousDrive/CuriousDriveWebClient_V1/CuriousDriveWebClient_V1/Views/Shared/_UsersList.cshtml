@@ -1,0 +1,94 @@
+﻿@model List<CuriousDriveWebClient.UserProfileCardViewModel>;
+
+@if (Model != null && Model.Count >= 0)
+{
+    <div class="col-lg-12 col-lg-12 d-none d-md-block">
+
+        @for (int i = 0; i < Model.Count; i = i++)
+        {
+            <div class="col-lg-12">
+                <br />
+            </div>
+            <div class="col-lg-12 row">
+                <div class="col-lg-2">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-lg-2">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <div class="col-sm-12 col-12 d-md-none d-block">
+
+        @for (int i = 0; i < Model.Count; i = i++)
+        {
+            <div class="col-12 ">
+                <br />
+            </div>
+            <div class=" col-sm-12 col-12 row">
+                <div class="col-sm-4 col-4">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-sm-4 col-4">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                <div class="col-sm-4 col-4">
+                    @if (i < Model.Count)
+                    {
+                        @await Html.PartialAsync("_UserProfileCard", Model[i])
+                        { i = i + 1; }
+                    }
+                </div>
+                
+            </div>
+        }
+
+    </div>
+}

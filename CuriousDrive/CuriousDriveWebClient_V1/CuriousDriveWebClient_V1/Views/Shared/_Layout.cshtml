@@ -1,0 +1,174 @@
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="@ViewBag.Description">
+    <meta name="keywords" content="@ViewBag.Keywords">
+    <meta name="author" content="Curious Drive">
+
+    @*Open Graph protocol*@
+    <meta property="og:title" content="@ViewBag.Title" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="@ViewBag.Url" />
+    <meta property="og:image" content="https://www.CuriousDriveWebAPI.CuriousDrive.com/Content/images/default_logo.jpg" />
+
+    @*Twitter cards meta data tags*@
+    <meta name="twitter:card" content="Website">
+    <meta name="twitter:url" content="@ViewBag.Url">
+    <meta name="twitter:title" content="@ViewBag.Title">
+    <meta name="twitter:description" content="@ViewBag.Description">
+    <meta name="twitter:image" content="https://www.CuriousDriveWebAPI.CuriousDrive.com/Content/images/default_logo.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://www.CuriousDriveWebAPI.CuriousDrive.com/Content/images/browser-icon.jpg" />
+
+    <link href="~/Content/bootstrap-4.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid-4.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot-4.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-social-3.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme-3.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <script src="~/Scripts/bootstrap-4.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/respond.js"></script>
+    <script src="~/Scripts/select2.full.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        @if ((Context.Session.GetInt32("UserId") ?? 0) != 0)
+        {
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>@Context.Session.GetString("DisplayName")</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        @Html.ActionLink("Ask a question", "AskQuestion", "Question", new { aintQuestionId = 0 }, new { @class = "" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Questions", "Questions", "Question")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Enroll a user", "EnrollUser", "Admin")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Add classes", "AddClass", "Admin")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Users", "Users", "UserProfile", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Give us your feedback", "SubmitFeedback", "Admin", new { }, new { @class = "nav-link" })
+                    </li>                    
+                    <li>
+                        @Html.ActionLink("Help center", "HelpCenter", "Admin", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("About us", "AboutUs", "Admin", new { }, new { @class = "nav-link" })
+                    </li>
+                    @*<li>
+            @Html.ActionLink("Make an announcement", "MakeAnAnnouncement", "Announcement", new { aintAnnouncementId = 0 }, new { @class = "" })
+        </li>
+        <li>
+            @Html.ActionLink("Announcements", "Index", "Announcement")
+        </li>
+        <li>
+            @Html.ActionLink("Create a user group", "CreateUserGroup", "Admin", new { aintUserGroupId = 0 }, new { @class = "" })
+        </li>
+        <li>
+            @Html.ActionLink("User groups", "UserGroups", "Admin")
+        </li>*@
+                </ul>
+
+                <ul class="list-unstyled CTAs">
+                    <li>
+                        <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Contact Us</a>
+                    </li>
+                    <li>
+                        <br />
+                    </li>
+                    <li>
+                        <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Social Links</a>
+                    </li>
+                </ul>
+            </nav>
+        }
+        <!-- Page Content  -->
+    <div id="content">
+
+
+        @if ((Context.Session.GetInt32("UserId") ?? 0) != 0)
+        {
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-10">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav nav-pills ml-auto">
+                            <li class="nav-item active">
+                                <a href="@Url.Action("Profile", "UserProfile", new { id = 1, title = "" })"
+                                   class="nav-link">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true">&ensp;</span>
+                                    <span>Profile</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="@Url.Action("Notifications", "UserProfile", new { })" class="nav-link">
+                                    <span class="glyphicon glyphicon-bell" aria-hidden="true">&ensp;</span>
+                                    Notifications
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="@Url.Action("LogOff", "Account")" class="nav-link">
+                                    <span class="glyphicon glyphicon-off" aria-hidden="true">&ensp;</span>
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        }
+
+        <div class="col-10">
+            @RenderBody()
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

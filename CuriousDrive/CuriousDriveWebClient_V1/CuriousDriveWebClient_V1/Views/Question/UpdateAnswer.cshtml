@@ -1,0 +1,14 @@
+﻿@*<div id="@string.Format("divQuestionAnswerEdit{0}", i)" class="col-md-12">
+        <div class="col-md-1" style="width:5%"></div>
+        <div class="col-md-11">
+            @Html.TextAreaFor(model => model.ilstQuestionAnswer[i].icdoQuestionAnswer.idoQuestionAnswer.answerHtml, new { @class = "col-sm-16 textarea-for-question-html" })
+        </div>
+        <div class="col-md-1" style="width:5%"></div>
+        <div class="col-md-11">
+            <button class="btn btn-primary" type="submit" name="submitType"
+                    value="@string.Format("UpdateQuestionAnswer{0}", Model.ilstQuestionAnswer[i].icdoQuestionAnswer.idoQuestionAnswer.questionAnswerId)">
+                Save
+            </button>
+            <button class="btn btn-primary" type="button" onclick="onLoad()">Cancel</button>
+        </div>
+    </div>*@
