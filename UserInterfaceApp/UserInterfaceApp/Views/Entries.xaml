@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.Entries">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Entry x:Name="entAppName"></Entry>
+
+            <Entry Text="this is an entry"></Entry>
+
+            <Entry Text="this is an entry" IsReadOnly="True"></Entry>
+
+            <Entry Text="this is an entry" MaxLength="10"></Entry>
+
+            <Entry Placeholder="username" PlaceholderColor="Olive"></Entry>
+
+            <Entry Placeholder="password" PlaceholderColor="Olive" IsPassword="True"></Entry>
+
+            <Entry Text="this is an entry" ReturnType="Search"></Entry>
+
+            <Entry Completed="Entry_Completed"></Entry>
+
+            <Label x:Name="lblCompleted" FontSize="Large"></Label>
+
+            <Entry TextChanged="Entry_TextChanged"></Entry>
+
+            <Label x:Name="lblEntryTextChangedOldValue" FontSize="Large"></Label>
+            <Label x:Name="lblEntryTextChangedNewValue" FontSize="Large"></Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:UserInterfaceApp"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.EmployeeListPage">
+    
+    <ContentPage.BindingContext>
+        <local:EmployeeListViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <SearchBar x:Name="schEmployees">
+                <SearchBar.Behaviors>
+                    <local:EventToCommandBehavior EventName="TextChanged"
+                                                  Command="{Binding searchCommand}"
+                                                  CommandParameter="{Binding Text, Source={x:Reference schEmployees}}"/>
+                </SearchBar.Behaviors>
+            </SearchBar>
+            
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>
+
+            <ListView ItemsSource="{Binding Employees}" 
+                      ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="7*"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <Image Source="{Binding PictureUrl}" Grid.Column="0"></Image>
+                                
+                                <Label Text="{Binding EmployeeName}" 
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       Grid.Column="1" 
+                                       VerticalTextAlignment="Start"></Label>
+                                
+                                <Label Text="{Binding Designation}" Grid.Column="1" VerticalTextAlignment="End"></Label>
+
+                                <Image Source="edit.png" Grid.Column="2">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Tapped="TapGestureRecognizer_Tapped_Edit"
+                                            CommandParameter="{Binding EmployeeId}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <Image Source="trash.png" Grid.Column="3">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Tapped="TapGestureRecognizer_Tapped_Remove"
+                                            CommandParameter="{Binding EmployeeId}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

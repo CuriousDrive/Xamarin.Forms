@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.Buttons">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Button Text="Simple Button Click" Clicked="Button_Clicked"></Button>
+            <Label x:Name="lblSimple" FontSize="Large"></Label>
+
+            <Button Text="Command Button Click" 
+                    Command="{Binding LocalCommand}"
+                    CommandParameter="Curious Drive"></Button>
+
+            <Button Text="Hello World" 
+                    Command="{Binding LocalCommand}"
+                    CommandParameter="Hello World"></Button>
+
+            <Label x:Name="lblCommand" FontSize="Large"></Label>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="OAuthNativeFlow.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="imgProfilePicture" Source="ProfilePicture.png"></Image>
+            <Label></Label>
+            
+            <Label x:Name="lblIdValue" FontSize="Large" Text="Id : " />
+            <Label></Label>
+
+            <Label x:Name="lblFirstNameValue" FontSize="Large" Text="First Name : "/>
+            <Label></Label>
+
+            <Label x:Name="lblLastNameValue" FontSize="Large" Text="Last Name :" />
+            <Label></Label>
+
+            <Label x:Name="lblEmailAddressValue" FontSize="Large" Text="Email Address : "/>
+            <Label></Label>
+            
+            <Button Text="Sign Out"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

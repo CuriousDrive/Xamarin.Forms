@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:UserInterfaceApp"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.EnrollStudentPage">
+    
+    <ContentPage.BindingContext>
+        <local:EnrollStudentViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Name :" FontSize="Large"></Label>
+            <Entry x:Name="entFullName" Text="{Binding FullName}" FontSize="Large">
+                <Entry.Behaviors>
+                    <local:OnlyLettersValidationBehavior/>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Label Text="Email Address :" FontSize="Large"></Label>
+            <Entry x:Name="entEmailAddress" Text="{Binding EmailAddress}" FontSize="Large"></Entry>
+
+            <Label Text="Is Foreign Student :" FontSize="Large"></Label>
+            <Switch x:Name="swForeignStudent" IsToggled="{Binding IsForeign}" HorizontalOptions="Start"></Switch>
+
+            <Button x:Name="btnSubmit" Text="Submit" Command="{Binding SubmitCommand}" FontSize="Large"></Button>
+            <Label x:Name="lblDisplayMessage" Text="{Binding DisplayMessage}" FontSize="Large"></Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

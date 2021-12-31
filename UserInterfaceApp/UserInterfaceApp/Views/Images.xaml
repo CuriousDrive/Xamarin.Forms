@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local ="clr-namespace:UserInterfaceApp"
+             mc:Ignorable="d"
+             x:Class="UserInterfaceApp.Images">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Image Source="win_logo.png" WidthRequest="600" HeightRequest="200"></Image>
+                <Label Text="Windows Logo" FontSize="Large"></Label>
+
+                <Image Source="https://cdn.cultofmac.com/wp-content/uploads/2019/07/logo-780x390.jpg" WidthRequest="600" HeightRequest="200"></Image>
+                <Label Text="Apple Logo" FontSize="Large"></Label>
+
+                <Image Source="{local:ImageResource UserInterfaceApp.xamarin_logo.png}" WidthRequest="600" HeightRequest="200"></Image>
+                <Label Text="Xamarin Logo" FontSize="Large"></Label>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
