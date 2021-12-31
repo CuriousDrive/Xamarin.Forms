@@ -1,4 +1,0 @@
-C:\Data\CuriousDrive\PrivateProjects\CuriousDrive\CuriousDriveWebAPI_V1\obj\Debug\netcoreapp3.0\CuriousDriveWebAPI_V1.csprojAssemblyReference.cache
-C:\Data\CuriousDrive\PrivateProjects\CuriousDrive\CuriousDriveWebAPI_V1\obj\Debug\netcoreapp3.0\CuriousDriveWebAPI_V1.MvcApplicationPartsAssemblyInfo.cache
-C:\Data\CuriousDrive\PrivateProjects\CuriousDrive\CuriousDriveWebAPI_V1\obj\Debug\netcoreapp3.0\CuriousDriveWebAPI_V1.AssemblyInfoInputs.cache
-C:\Data\CuriousDrive\PrivateProjects\CuriousDrive\CuriousDriveWebAPI_V1\obj\Debug\netcoreapp3.0\CuriousDriveWebAPI_V1.AssemblyInfo.cs

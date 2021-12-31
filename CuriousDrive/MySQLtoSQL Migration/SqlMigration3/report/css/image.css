@@ -1,9 +1,0 @@
-body {margin:0;}
-.image-block {overflow:hidden;/*text-align:center;*/position:relative;width:100%;height:52px;background-color: silver;}
-.image-block-img-banner{top:25%;position: absolute;}
-.image-block-img-ms-logo{top:25%;position: absolute;right:10;}
-.image-block.close {height:9px;}
-.expander-up:hover {background:url(../img/expander_button.gif) no-repeat;}
-.expander-up {position:absolute;left:50%;top:100%;width:50px;height:9px;background:none;margin:-9px 0 0;}
-.expander-up span {display:block;width:10px;height:5px;margin:2px auto;background:url(../img/expander_arrow_up.gif) no-repeat;}
-.expander-up.close span {background:url(../img/expander_arrow_down.gif) no-repeat;}

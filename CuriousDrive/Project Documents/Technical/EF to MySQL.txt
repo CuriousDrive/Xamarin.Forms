@@ -1,4 +1,0 @@
-1. Install MySQL for Visual Studio in order to get MySQL data source provider in VS
-2. Install latest MySQL connector for ADO.NET
-3. Install same version of MySQL.Data.EntityFramework from nuget in the solution 
-4. then you should be able to link your database and create model in your project

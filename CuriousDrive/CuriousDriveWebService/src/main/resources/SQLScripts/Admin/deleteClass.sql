@@ -1,7 +1,0 @@
-SET @CLASS_ID = ?;
-
--- delete all question classes 
-DELETE QC FROM TRAN_QUESTION_CLASS QC WHERE QC.CLASS_ID = @CLASS_ID;
-
--- delete the class
-DELETE C FROM TRAN_CLASS C WHERE C.CLASS_ID = @CLASS_ID;
